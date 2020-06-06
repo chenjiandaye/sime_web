@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -62,16 +63,10 @@ header .h_box .h_info {
   padding-left: 40px;
 }
 
-header .h_box .h_info .info_img {
+header .h_box .h_info img {
   float: left;
   width: 30px;
-  height: 30px;
-}
-
-header .h_box .h_info .info_img img {
-  width: 100%;
-  height: 100%;
-  margin-left: 45px;
+  margin-left: 12px;
   margin-top: 26px;
 }
 
@@ -223,6 +218,10 @@ header .h_box .h_info .info_phone p:first-child {
   background-size: 100%;
 }
 
+.content {
+  color: #333333;
+}
+
 .content .content-top {
   height: 50px;
   border-bottom: 1px solid #dddddd;
@@ -292,8 +291,8 @@ header .h_box .h_info .info_phone p:first-child {
 
 .content .knows .know-items {
   position: relative;
-  height: 590px;
-  background-color: red;
+  height: 530px;
+  margin-bottom: 100px;
 }
 
 .content .knows .know-items .item-tit {
@@ -303,22 +302,196 @@ header .h_box .h_info .info_phone p:first-child {
   letter-spacing: 2px;
 }
 
-.content .knows .know-items .item-left {
+.content .knows .know-items.keep-left .item-left {
   position: absolute;
   left: 0;
   top: 60px;
   width: 680px;
-  height: 100px;
+  height: 400px;
   z-index: 1;
   background-color: pink;
 }
 
-.content .knows .know-items .item-right {
+.content .knows .know-items.keep-left .item-right {
+  padding-top: 116px;
   position: absolute;
   right: 0;
   top: 60px;
   width: 680px;
-  height: 100px;
+  height: 400px;
   z-index: 2;
-  background-color: green;
+}
+
+.content .knows .know-items.keep-left .item-right h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content .knows .know-items.keep-left .item-right p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 28px;
+}
+
+.content .knows .know-items.keep-left .item-right .item-btns {
+  margin-top: 50px;
+}
+
+.content .knows .know-items.keep-left .item-right .item-btns > div {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.content .knows .know-items.keep-left .item-right .item-btns .i-btn1 {
+  width: 140px;
+  color: #fff;
+  margin-right: 20px;
+  background-color: #377DC9;
+}
+
+.content .knows .know-items.keep-left .item-right .item-btns .i-btn2,
+.content .knows .know-items.keep-left .item-right .item-btns .i-btn3 {
+  padding: 0 28px;
+  border: 1px solid #377DC9;
+  color: #377DC9;
+  margin-right: 20px;
+}
+
+.content .knows .know-items.keep-right .item-left {
+  padding-top: 116px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 680px;
+  height: 400px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.content .knows .know-items.keep-right .item-left h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content .knows .know-items.keep-right .item-left p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 28px;
+}
+
+.content .knows .know-items.keep-right .item-left .item-btns {
+  margin-top: 50px;
+}
+
+.content .knows .know-items.keep-right .item-left .item-btns > div {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.content .knows .know-items.keep-right .item-left .item-btns .i-btn1 {
+  width: 140px;
+  color: #fff;
+  margin-right: 20px;
+  background-color: #377DC9;
+}
+
+.content .knows .know-items.keep-right .item-left .item-btns .i-btn2,
+.content .knows .know-items.keep-right .item-left .item-btns .i-btn3 {
+  padding: 0 28px;
+  border: 1px solid #377DC9;
+  color: #377DC9;
+  margin-right: 20px;
+}
+
+.content .knows .know-items.keep-right .item-right {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 680px;
+  height: 400px;
+  z-index: 1;
+  background-color: pink;
+}
+
+.content .our-services {
+  position: relative;
+  max-width: 1920px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: pink;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+}
+
+.content .our-services .ser-tit {
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.content .our-services .p-txt {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.content .our-services .ser-bot {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 100px auto 0;
+}
+
+.content .our-services .ser-bot .ser-item {
+  flex: 1;
+  text-align: center;
+}
+
+.content .our-services .ser-bot .ser-item img {
+  width: 134px;
+}
+
+.content .our-services .ser-bot .ser-item .ser-txt {
+  letter-spacing: 1px;
+  margin-top: 24px;
+}
+
+.content .our-services .ser-bot .ser-item .ser-txt .serve {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content .our-services .ser-bot .ser-item .ser-txt .exp {
+  font-size: 14px;
+}
+
+.content .flow {
+  width: 1182px;
+  height: 1150px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+  background-color: red;
+}
+
+.content .flow .f-tit {
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.content .flow .f-text {
+  font-size: 18px;
+  color: #888888;
+  letter-spacing: 1px;
 }
