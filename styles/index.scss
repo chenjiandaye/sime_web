@@ -8,8 +8,12 @@ a {
     text-decoration: none;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
 body {
-    height: 20000px;
     min-width: 1024px;
 }
 
@@ -225,6 +229,7 @@ header {
 
 .content {
     color: #333333;
+
     .content-top {
         height: 50px;
         border-bottom: 1px solid #dddddd;
@@ -503,8 +508,136 @@ header {
             color: #888888;
             letter-spacing: 1px;
         }
-        .f-chart {
-            
+
+        .f-chart {}
+    }
+
+    .foot {
+        height: 440px;
+        background-color: #202B39;
+
+        .foot-c {
+            position: relative;
+            width: 1182px;
+            height: 100%;
+            margin: 0 auto;
+            padding-top: 50px;
+            color: #fff;
+            overflow: hidden;
+
+            .w {
+                overflow: hidden;
+                .foot-c-left {
+                    float: left;
+                    width: 350px;
+
+                    .foot-c-left-item {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+
+                        .foot-c-left-item-tit {
+                            position: relative;
+                            padding: 0 0 10px 40px;
+                            border-bottom: 1px solid #5A636F;
+
+                            img {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 28px;
+                                float: left;
+                            }
+                        }
+
+                        .foot-c-left-item-box {
+                            padding: 10px 0 0 40px;
+                            overflow: hidden;
+
+                            .phones {
+                                float: left;
+                                font-size: 18px;
+
+                                p {
+                                    font-size: 18px;
+
+                                    &:first-child {
+                                        margin-bottom: 3px;
+                                    }
+                                }
+                            }
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                            .phone-btn {
+                                font-size: 13px;
+                                float: right;
+                                width: 86px;
+                                height: 32px;
+                                line-height: 32px;
+                                text-align: center;
+                                border-radius: 2px;
+                                margin-top: 9px;
+                                border: 1px solid #5A636F;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .foot-c-help {
+                    float: right;
+                    display: flex;
+                    width: 680px;
+
+                    .fore {
+                        flex: 1;
+                        margin-right: 80px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        dt {
+                            font-size: 18px;
+                            padding-bottom: 10px;
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid #5A636F;
+                        }
+
+                        dd {
+                            font-size: 14px;
+                            margin-bottom: 15px;
+
+                            a {
+                                color: #999999;
+                            }
+
+                            &.QRimg {
+                                width: 80px;
+                                height: 80px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .copyright {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                border-top: 1px solid #5A636F;
+                text-align: center;
+                line-height: 55px;
+                font-size: 13px;
+                color: #999999;
+            }
         }
     }
 }
