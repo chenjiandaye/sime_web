@@ -15,5 +15,6 @@
   
   body {
     min-width: 1024px;
+    color: #333333;
     overflow-x: hidden;
   }
