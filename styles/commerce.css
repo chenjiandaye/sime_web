@@ -2,7 +2,7 @@
   max-width: 1920px;
   height: 750px;
   margin: 0 auto;
-  background: url(../images/ds-home/banner_simeidianshang.png) no-repeat;
+  background: url(../images/commerce/banner_simeidianshang.png) no-repeat;
   background-size: cover;
   padding-top: 150px;
   color: #fff;
@@ -238,7 +238,7 @@
   max-width: 1920px;
   height: 920px;
   margin: 70px auto 0;
-  background: url(../images/ds-home/bg_dianshang_wending.png) no-repeat;
+  background: url(../images/commerce/bg_dianshang_wending.png) no-repeat;
   background-size: cover;
   text-align: center;
   padding-top: 110px;
@@ -313,7 +313,7 @@
   max-width: 1920px;
   height: 800px;
   margin: 0 auto;
-  background: url(../images/ds-home/bg_dianshang_anli.png) no-repeat;
+  background: url(../images/commerce/bg_dianshang_anli.png) no-repeat;
   background-size: cover;
 }
 
@@ -372,10 +372,13 @@
 }
 
 .main .case .case-tab .case-tab-box .tab-items .tab-item .img-box {
-  width: 500px;
+  width: 490px;
   height: 100%;
   float: left;
-  background-color: pink;
+}
+
+.main .case .case-tab .case-tab-box .tab-items .tab-item .img-box img {
+  width: 100%;
 }
 
 .main .case .case-tab .case-tab-box .tab-items .tab-item .wzjs {

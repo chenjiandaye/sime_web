@@ -101,7 +101,8 @@
         margin: 0 auto;
         padding-top: 100px;
         color: #ffffff;
-        background-color: #666666;
+        background: url(../images/s2b2c/pexels-photo.png) no-repeat;
+        background-size: cover;
 
         .operation-layer {
             width: 1180px;
@@ -111,11 +112,14 @@
                 font-size: 32px;
                 letter-spacing: 2px;
                 text-align: center;
+                margin-bottom: 60px;
             }
 
             .operation-img {
-                height: 200px;
-                background-color: pink;
+                text-align: center;
+                img{
+                    width: 1100px;
+                }
             }
         }
     }

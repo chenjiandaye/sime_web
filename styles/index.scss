@@ -604,6 +604,7 @@
                     height: 350px;
                     border-radius: 10px 10px 0px 0px;
                     overflow: hidden;
+                    background-color: #fff;
 
                     .dyn-img {
                         width: 100%;
@@ -651,7 +652,8 @@
 
             .dyn-bot-btn {
                 text-align: center;
-
+                margin-top: 40px;
+                
                 button {
                     width: 128px;
                     height: 40px;

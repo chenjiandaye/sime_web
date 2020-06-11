@@ -94,27 +94,30 @@
 
 .main .operation {
   max-width: 1920px;
-  height: 1250px;
+  height: 1200px;
   margin: 0 auto;
   padding-top: 100px;
   color: #ffffff;
-  background-color: #666666;
+  background: url(../images/micromall/pexels-photo.png) no-repeat;
+  background-size: cover;
 }
 
 .main .operation .operation-layer {
   width: 1180px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main .operation .operation-layer .operation-tit {
   font-size: 32px;
   letter-spacing: 2px;
-  text-align: center;
+  margin-bottom: 60px;
 }
 
-.main .operation .operation-layer .operation-img {
-  height: 200px;
-  background-color: pink;
+.main .operation .operation-layer img {
+  position: relative;
+  left: -42px;
+  width: 894px;
 }
 
 .main .system {

@@ -9,6 +9,8 @@ $(function () {
         direction: 'horizontal',
         pagination: '.swiper-pagination',
         paginationType: 'custom',
+        autoplay: 3000,
+        loop : true,
         paginationClickable: true,
         paginationCustomRender: function (swiper, current, total) {
             var customPaginationHtml = "";
