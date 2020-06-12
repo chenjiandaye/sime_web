@@ -177,6 +177,7 @@
   margin: 0 auto;
   border: 5px solid #FFE9EA;
   margin-bottom: 64px;
+  margin-top: 40px;
 }
 
 .main .structure .lead .lead-layer .lead-cir-out .lead-cir-in {
@@ -395,51 +396,101 @@
   margin-top: 20px;
 }
 
-.main .apply {
-  background-color: #F5F5F5;
-}
-
-.main .apply .apply-layer {
+.main .structure .periphery .periphery-layer {
+  position: relative;
   width: 1180px;
   margin: 0 auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.main .apply .apply-layer .apply-tit {
-  height: 115px;
-  font-size: 32px;
   text-align: center;
-  letter-spacing: 2px;
 }
 
-.main .apply .apply-layer .apply-module {
+.main .structure .periphery .periphery-layer .periphery-name {
+  padding-top: 80px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.main .structure .periphery .periphery-layer .periphery-items {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 55px;
+  margin-bottom: 84px;
 }
 
-.main .apply .apply-layer .apply-module .module-item {
-  width: 180px;
-  height: 150px;
-  margin-bottom: 20px;
-  text-align: center;
+.main .structure .periphery .periphery-layer .periphery-items .periphery-item {
+  margin: 0 25px;
 }
 
-.main .apply .apply-layer .apply-module .module-item img {
-  width: 100px;
+.main .structure .periphery .periphery-layer .periphery-items .periphery-item img {
+  width: 80px;
 }
 
-.main .apply .apply-layer .apply-module .module-item p {
-  font-size: 16px;
-  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
-  font-weight: bold;
-  color: #555555;
+.main .structure .periphery .periphery-layer .periphery-items .periphery-item p {
+  font-size: 15px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
 
+.main .capacity {
+  background-color: #F5F5F5;
+}
+
+.main .capacity .capacity-layer {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.main .capacity .capacity-layer .capacity-tit {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 100px;
+}
+
+.main .capacity .capacity-layer .capacity-module {
+  margin-top: 80px;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+
+.main .capacity .capacity-layer .capacity-module .module-item {
+  float: left;
+  width: 270px;
+  height: 350px;
+  background: #fff;
+  box-shadow: 0px 5px 50px 0px #ECECED;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  margin-right: 32px;
+}
+
+.main .capacity .capacity-layer .capacity-module .module-item:nth-of-type(4n+4) {
+  margin-right: 0;
+}
+
+.main .capacity .capacity-layer .capacity-module .module-item .item-name {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.main .capacity .capacity-layer .capacity-module .module-item .item-text {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888888;
+  line-height: 22px;
+  padding: 0 30px;
+}
+
+.main .capacity .capacity-layer .capacity-module .module-item img {
+  width: 100%;
+}
+
 .advisory {
+  background: linear-gradient(270deg, #F84335 0%, #FF674C 100%);
+}
+
+.advisory .advisory-layer {
   max-width: 1920px;
   height: 150px;
   margin: 0 auto;
@@ -447,15 +498,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0DC0AD;
 }
 
-.advisory p {
+.advisory .advisory-layer p {
   font-size: 32px;
   letter-spacing: 3px;
 }
 
-.advisory button {
+.advisory .advisory-layer button {
   width: 140px;
   height: 44px;
   border-radius: 3px;

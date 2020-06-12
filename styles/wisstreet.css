@@ -423,6 +423,10 @@
 }
 
 .advisory {
+  background-color: #37A3E6;
+}
+
+.advisory .advisory-layer {
   max-width: 1920px;
   height: 150px;
   margin: 0 auto;
@@ -430,15 +434,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #37A3E6;
 }
 
-.advisory p {
+.advisory .advisory-layer p {
   font-size: 32px;
   letter-spacing: 3px;
 }
 
-.advisory button {
+.advisory .advisory-layer button {
   width: 140px;
   height: 44px;
   border-radius: 3px;

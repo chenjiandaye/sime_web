@@ -226,30 +226,33 @@
 }
 
 .advisory {
-    max-width: 1920px;
-    height: 150px;
-    margin: 0 auto;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(90deg, #5CD8B8 0%, #36C8A3 100%);
 
-    p {
-        font-size: 32px;
-        letter-spacing: 3px;
-    }
-
-    button {
-        width: 140px;
-        height: 44px;
-        border-radius: 3px;
-        border: 1px solid #fff;
-        outline: none;
-        font-size: 18px;
+    .advisory-layer {
+        max-width: 1920px;
+        height: 150px;
+        margin: 0 auto;
         color: #fff;
-        margin-left: 220px;
-        cursor: pointer;
-        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 32px;
+            letter-spacing: 3px;
+        }
+
+        button {
+            width: 140px;
+            height: 44px;
+            border-radius: 3px;
+            border: 1px solid #fff;
+            outline: none;
+            font-size: 18px;
+            color: #fff;
+            margin-left: 220px;
+            cursor: pointer;
+            background-color: transparent;
+        }
     }
 }

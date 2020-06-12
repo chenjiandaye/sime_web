@@ -256,6 +256,10 @@
 }
 
 .advisory {
+  background: linear-gradient(270deg, #FF8D5E 0%, #FC996A 100%);
+}
+
+.advisory .advisory-layer {
   max-width: 1920px;
   height: 150px;
   margin: 0 auto;
@@ -263,15 +267,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(270deg, #FF8D5E 0%, #FC996A 100%);
 }
 
-.advisory p {
+.advisory .advisory-layer p {
   font-size: 32px;
   letter-spacing: 3px;
 }
 
-.advisory button {
+.advisory .advisory-layer button {
   width: 140px;
   height: 44px;
   border-radius: 3px;
