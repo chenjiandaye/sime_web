@@ -1,0 +1,299 @@
+.banner {
+  max-width: 1920px;
+  height: 400px;
+  margin: 0 auto;
+  background: url(../images/common/banner_anli.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 120px;
+  color: #ffffff;
+}
+
+.mian {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+}
+
+.mian nav {
+  width: 180px;
+}
+
+.mian nav .nav-name {
+  font-size: 28px;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+  font-weight: bold;
+  color: #377DC9;
+  letter-spacing: 2px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.mian nav ul li {
+  height: 65px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.mian nav ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 65px;
+  color: #444444;
+}
+
+.mian nav ul li a.on {
+  color: #377DC9;
+}
+
+.mian .main-content {
+  flex: 1;
+  padding-left: 60px;
+}
+
+.mian .main-content section {
+  display: none;
+}
+
+.mian .main-content .content-tit {
+  font-size: 28px;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+  font-weight: bold;
+  color: #444444;
+  line-height: 37px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 9px;
+}
+
+.mian .main-content .content {
+  padding-top: 40px;
+}
+
+.mian .main-content .content.gsjj {
+  margin-bottom: 60px;
+}
+
+.mian .main-content .content.gsjj .content-img {
+  min-height: 420px;
+  margin: 0 auto;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+.mian .main-content .content.gsjj p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #444444;
+  line-height: 28px;
+  text-indent: 2em;
+}
+
+.mian .main-content .content.gsjj p em {
+  font-style: normal;
+  font-weight: 700;
+  color: #377DC9;
+}
+
+.mian .main-content .content.zzjg {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.mian .main-content .content.zzjg img {
+  width: 950px;
+}
+
+.mian .main-content .content.qyry {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mian .main-content .content.qyry .honor-item {
+  width: 420px;
+  height: 350px;
+  text-align: center;
+  margin-bottom: 80px;
+  box-shadow: 0px 4px 40px 0px #ECECED;
+}
+
+.mian .main-content .content.qyry .honor-item .item-img {
+  height: 260px;
+  background-color: #ccc;
+}
+
+.mian .main-content .content.qyry .honor-item .item-name {
+  line-height: 90px;
+}
+
+.mian .main-content .content.gsdsj {
+  padding-bottom: 50px;
+}
+
+.mian .main-content .content.gsdsj .slogan {
+  text-align: center;
+  font-size: 22px;
+  color: #377DC9;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+}
+
+.mian .main-content .content.gsdsj .deep-items {
+  position: relative;
+  padding-top: 40px;
+}
+
+.mian .main-content .content.gsdsj .deep-items::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
+  background-color: #377DC9;
+}
+
+.mian .main-content .content.gsdsj .deep-items .star {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item {
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(55, 125, 201, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #377dc9;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item .sj-box {
+  position: relative;
+  width: 350px;
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item .left .sj-box {
+  float: left;
+  left: 50px;
+  text-align: right;
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item .right .sj-box {
+  float: right;
+  right: 50px;
+  text-align: left;
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item img {
+  width: 200px;
+  height: 140px;
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item .time {
+  font-size: 24px;
+  padding: 15px 0 8px;
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item p {
+  position: relative;
+  color: #555555;
+  font-size: 18px;
+}
+
+.mian .main-content .content.cpyc {
+  padding-top: 30px;
+}
+
+.mian .main-content .content.cpyc .list-box .list {
+  border: 1px solid #ddd;
+  padding: 20px 30px;
+  margin-bottom: 15px;
+}
+
+.mian .main-content .content.cpyc .list-box .list-name {
+  font-size: 18px;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+  font-weight: bold;
+  color: #444444;
+  letter-spacing: 1px;
+}
+
+.mian .main-content .content.cpyc .list-box .list-name .hot {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  border-radius: 8px 8px 8px 0px;
+  background-color: #F32E2B;
+  color: #ffffff;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.mian .main-content .content.cpyc .list-box .list-info {
+  font-size: 14px;
+  color: #666666;
+  line-height: 19px;
+  padding: 11px 0 15px;
+  display: flex;
+}
+
+.mian .main-content .content.cpyc .list-box .list-info span {
+  flex: 1;
+}
+
+.mian .main-content .content.cpyc .list-box .list-info span.time {
+  text-align: right;
+}
+
+.mian .main-content .content.cpyc .list-box .list-info .add,
+.mian .main-content .content.cpyc .list-box .list-info .pay,
+.mian .main-content .content.cpyc .list-box .list-info .num {
+  flex: 2.5;
+}
+
+.mian .main-content .content.cpyc .list-box .list-info .responsibility {
+  font-size: 14px;
+  color: #555555;
+  line-height: 22px;
+}
+
+.mian .main-content .content.cpyc .pages {
+  float: right;
+  margin: 10px 0 50px;
+}
