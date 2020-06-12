@@ -28,6 +28,8 @@ $(function () {
     window.addEventListener("hashchange", function () {
         loadInner()
     })
+
+    
     loadInner()
     pageInit()
 })
