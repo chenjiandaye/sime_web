@@ -1,31 +1,12 @@
 @charset "UTF-8";
 
-.pages {
-    -moz-user-select: none;
-    /*火狐*/
-    -webkit-user-select: none;
-    /*webkit浏览器*/
-    -ms-user-select: none;
-    /*IE10*/
-    -khtml-user-select: none;
-    /*早期浏览器*/
-    user-select: none;
+.ms-content-main-page {
+    float: right;
+    margin: 20px 0;
 }
 
-.pages a,
-.pages span {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+.ms-content-main-page a {
     border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: 10px;
-    text-align: center;
-    line-height: 40px;
+    padding: 5px 10px;
     color: #888888;
-}
-
-.pages .active {
-    background-color: #377DC9;
-    color: #ffffff;
 }

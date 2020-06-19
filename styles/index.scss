@@ -1,6 +1,6 @@
 .swper-box {
     max-width: 1920px;
-    height: 750px;
+    max-height: 750px;
     margin: 0 auto;
 
     .swiper-container {
@@ -21,12 +21,16 @@
                         left: 50%;
                         transform: translateX(-50%);
                         width: 1180px;
-                        height: 750px;
+                        height: 100%;
                         margin: 0 auto;
                         color: #333333;
 
+                        &.white {
+                            color: #fff;
+                        }
+
                         .info-tit {
-                            margin-top: 110px;
+                            // margin-top: 110px;
                             font-size: 60px;
                         }
 
@@ -50,8 +54,31 @@
                         .info-btnbox {
                             margin-top: 60px;
 
+                            &.ds {
+                                button {
+                                    background-color: #FFBE54;
+                                }
+                            }
+
+                            &.jy {
+                                button {
+                                    background-color: #0DC0AD;
+                                }
+                            }
+
+                            &.jd {
+                                button {
+                                    background-color: #37A3E6;
+                                }
+                            }
+
+                            &.ab {
+                                button {
+                                    background-color: #F84335;
+                                }
+                            }
+
                             &>button {
-                                background-color: #FFBE54;
                                 border-radius: 3px;
                                 display: inline-block;
                                 cursor: pointer;
@@ -79,7 +106,7 @@
                         }
                     }
 
-                    .img {
+                    img {
                         display: block;
                         position: relative;
                         width: 100%;
@@ -153,8 +180,26 @@
                 justify-content: space-between;
 
                 .text-item {
+                    flex: 1;
                     position: relative;
                     padding-left: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    position: relative;
+                    padding-right: 60px;
+
+                    a {
+                        color: #333333;
+                    }
+
+                    .li-r {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        float: right;
+                        padding: 0 10px;
+                    }
 
                     &::before {
                         content: '';
@@ -176,9 +221,10 @@
     .knows {
         width: 1180px;
         margin: 0 auto;
+        margin-bottom: 150px;
 
         .know-top {
-            height: 327px;
+            height: 230px;
             text-align: center;
             overflow: hidden;
 
@@ -199,15 +245,8 @@
 
         .know-items {
             position: relative;
-            height: 530px;
-            margin-bottom: 100px;
-
-            .item-tit {
-                text-align: center;
-                font-size: 30px;
-                line-height: 40px;
-                letter-spacing: 2px;
-            }
+            height: 540px;
+            margin-bottom: 50px;
 
             &.keep-left {
                 .item-left {
@@ -215,9 +254,11 @@
                     left: 0;
                     top: 60px;
                     width: 680px;
-                    height: 400px;
                     z-index: 1;
-                    background-color: pink;
+
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 .item-right {
@@ -225,13 +266,14 @@
                     position: absolute;
                     right: 0;
                     top: 60px;
-                    width: 680px;
-                    height: 400px;
+                    width: 530px;
                     z-index: 2;
 
                     h4 {
-                        font-size: 24px;
-                        margin-bottom: 20px;
+                        font-size: 30px;
+                        margin-bottom: 50px;
+                        font-weight: normal;
+                        letter-spacing: 2px;
                     }
 
                     p {
@@ -277,14 +319,15 @@
                     position: absolute;
                     left: 0;
                     top: 60px;
-                    width: 680px;
-                    height: 400px;
+                    width: 530px;
                     z-index: 2;
                     cursor: pointer;
 
                     h4 {
-                        font-size: 24px;
-                        margin-bottom: 20px;
+                        font-size: 30px;
+                        margin-bottom: 50px;
+                        font-weight: normal;
+                        letter-spacing: 2px;
                     }
 
                     p {
@@ -327,116 +370,74 @@
                     right: 0;
                     top: 60px;
                     width: 680px;
-                    height: 400px;
                     z-index: 1;
-                    background-color: pink;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
     }
 
     .our-services {
-        max-width: 1920px;
-        height: 800px;
-        margin: 0 auto;
-        background-color: pink;
-        background: url(../images/home/bg_home_fuwu.png) no-repeat;
-        background-size: cover;
+        background-color: #F3F4F5;
         text-align: center;
-        color: #fff;
-        padding-top: 150px;
 
         .ser-layer {
-            position: relative;
+            width: 1180px;
+            height: 900px;
+            margin: 0 auto;
         }
 
         .ser-tit {
             font-size: 36px;
             letter-spacing: 3px;
+            padding-top: 100px;
             margin-bottom: 20px;
         }
 
-        .p-txt {
-            font-size: 18px;
-            line-height: 30px;
-            letter-spacing: 1px;
-        }
-
-        .ser-bot {
-            display: flex;
-            justify-content: space-between;
-            width: 1200px;
-            margin: 100px auto 0;
-
-            .ser-item {
-                flex: 1;
-                text-align: center;
-
-                img {
-                    width: 134px;
-                }
-
-                .ser-txt {
-                    letter-spacing: 1px;
-                    margin-top: 24px;
-
-                    .serve {
-                        font-size: 20px;
-                        margin-bottom: 20px;
-                    }
-
-                    .exp {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
-
-    .flow {
-        width: 1180px;
-        height: 1150px;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 120px;
-
-        .f-tit {
-            font-size: 36px;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-        }
-
-        .f-text {
+        .p-text {
             font-size: 18px;
             color: #888888;
             letter-spacing: 1px;
+            text-align: center;
+            line-height: 30px;
         }
 
-        .f-chart {
-            .chart-layer {
-                display: flex;
-                flex-wrap: wrap;
-                width: 1180px;
-                height: 733px;
-                margin: 100px auto 0;
-                background: url(../images/home/bg_home_liucheng.png) no-repeat;
-                background-size: cover;
+        .ser-bot {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 100px auto 0;
 
-                .chart-item {
-                    width: 25%;
-                    height: 263px;
-                    text-align: center;
-                    padding-top: 23px;
+            .ser-item {
+                text-align: center;
+                margin-bottom: 110px;
 
-                    img {
-                        width: 110px;
-                    }
+                img {
+                    width: 120px;
+                }
 
-                    p {
-                        font-size: 18px;
-                        color: #666666;
-                        margin-top: 20px;
-                    }
+                p {
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    margin-top: 20px;
+                }
+            }
+            .ser-item-arrow {
+                margin-top: 50px;
+                img{
+                    width: 40px;
+                }
+            }
+            .ser-item-arrow-bot {
+                position: absolute;
+                right: 46px;
+                top: 200px;
+                img{
+                    height: 40px;
                 }
             }
         }
@@ -460,16 +461,20 @@
             .arrows {
                 width: 86px;
                 height: 40px;
-                margin-top: 102px;
+                margin-top: 165px;
             }
 
             .sell-item {
-                width: 190px;
-                padding-top: 80px;
+                width: 320px;
+                height: 360px;
                 text-align: center;
+                background-color: #fff;
+                border-radius: 10px;
+                color: #333333;
+                padding-top: 20px;
 
                 img {
-                    width: 43px;
+                    width: 80px;
                 }
 
                 .sell-tit {
@@ -479,9 +484,9 @@
                 }
 
                 p {
-                    position: relative;
-                    margin-bottom: 20px;
+                    margin-bottom: 13px;
                     letter-spacing: 1px;
+                    color: #555555;
 
                     &::before {
                         content: '';
@@ -489,10 +494,10 @@
                         width: 6px;
                         height: 6px;
                         border-radius: 50%;
-                        background-color: #fff;
-                        position: absolute;
-                        left: 0;
-                        top: 9px;
+                        background-color: #555555;
+                        position: relative;
+                        left: -10px;
+                        top: -2px;
                     }
                 }
             }
@@ -582,6 +587,7 @@
         .dyn-layer {
             width: 1180px;
             margin: 0 auto;
+
             .dyn-top {
                 margin: 0 auto;
                 height: 230px;
@@ -607,19 +613,18 @@
                     background-color: #fff;
 
                     .dyn-img {
-                        width: 100%;
                         height: 180px;
                         overflow: hidden;
-                        background-color: pink;
+                        text-align: center;
 
                         img {
-                            width: 100%;
+                            height: 100%;
                         }
                     }
 
                     .dyn-c {
                         width: 100%;
-                        padding: 10px 20px 0;
+                        padding: 10px 20px;
 
                         .dyn-c-t {
                             overflow: hidden;
@@ -632,6 +637,7 @@
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
+                                color: #333333;
                             }
 
                             .time {
@@ -645,6 +651,11 @@
                             font-size: 14px;
                             line-height: 26px;
                             color: #666666;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
                         }
                     }
                 }
@@ -653,7 +664,7 @@
             .dyn-bot-btn {
                 text-align: center;
                 margin-top: 40px;
-                
+
                 button {
                     width: 128px;
                     height: 40px;
@@ -710,133 +721,3 @@
         }
     }
 }
-
-// .foot {
-//     height: 440px;
-//     background-color: #202B39;
-
-//     .foot-c {
-//         position: relative;
-//         width: 1180px;
-//         height: 100%;
-//         margin: 0 auto;
-//         padding-top: 50px;
-//         color: #fff;
-//         overflow: hidden;
-
-//         .w {
-//             overflow: hidden;
-
-//             .foot-c-left {
-//                 float: left;
-//                 width: 350px;
-
-//                 .foot-c-left-item {
-//                     font-size: 18px;
-//                     margin-bottom: 30px;
-
-//                     .foot-c-left-item-tit {
-//                         position: relative;
-//                         padding: 0 0 10px 40px;
-//                         border-bottom: 1px solid #5A636F;
-
-//                         img {
-//                             position: absolute;
-//                             left: 0;
-//                             top: 0;
-//                             width: 28px;
-//                             float: left;
-//                         }
-//                     }
-
-//                     .foot-c-left-item-box {
-//                         padding: 10px 0 0 40px;
-//                         overflow: hidden;
-
-//                         .phones {
-//                             float: left;
-//                             font-size: 18px;
-
-//                             p {
-//                                 font-size: 18px;
-
-//                                 &:first-child {
-//                                     margin-bottom: 3px;
-//                                 }
-//                             }
-//                         }
-
-//                         p {
-//                             font-size: 14px;
-//                         }
-
-//                         .phone-btn {
-//                             font-size: 13px;
-//                             float: right;
-//                             width: 86px;
-//                             height: 32px;
-//                             line-height: 32px;
-//                             text-align: center;
-//                             border-radius: 2px;
-//                             margin-top: 9px;
-//                             border: 1px solid #5A636F;
-//                             cursor: pointer;
-//                         }
-//                     }
-//                 }
-//             }
-
-//             .foot-c-help {
-//                 float: right;
-//                 display: flex;
-//                 width: 680px;
-
-//                 .fore {
-//                     flex: 1;
-//                     margin-right: 80px;
-
-//                     &:last-child {
-//                         margin-right: 0;
-//                     }
-
-//                     dt {
-//                         font-size: 18px;
-//                         padding-bottom: 10px;
-//                         margin-bottom: 20px;
-//                         border-bottom: 1px solid #5A636F;
-//                     }
-
-//                     dd {
-//                         font-size: 14px;
-//                         margin-bottom: 15px;
-
-//                         a {
-//                             color: #999999;
-//                         }
-
-//                         &.QRimg {
-//                             width: 80px;
-//                             height: 80px;
-
-//                             img {
-//                                 width: 100%;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-
-//         .copyright {
-//             position: absolute;
-//             left: 0;
-//             bottom: 0;
-//             width: 100%;
-//             border-top: 1px solid #5A636F;
-//             text-align: center;
-//             line-height: 55px;
-//             font-size: 13px;
-//             color: #999999;
-//         }
-//     }
-// }

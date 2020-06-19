@@ -1,11 +1,37 @@
+@media screen and(min-width: 0) {
+    .banner {
+        height: 460px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and(min-width: 1180px) {
+    .banner {
+        height: 550px;
+        padding-top: 52px;
+    }
+}
+
+@media screen and(min-width: 1280px) {
+    .banner {
+        height: 660px;
+        padding-top: 75px;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .banner {
+        height: 750px;
+        padding-top: 120px;
+    }
+}
+
 .banner {
     max-width: 1920px;
-    height: 750px;
     margin: 0 auto;
     background: url(../images/education/banner_jiaoyu.png) no-repeat;
     background-size: cover;
     text-align: center;
-    padding-top: 120px;
     color: #ffffff;
 
     .banner-tit {
@@ -128,21 +154,27 @@
                             justify-content: center;
                             border-bottom: 1px solid #dddddd;
                             cursor: pointer;
+                            transition: all .3s;
+
+                            &::after {
+                                position: absolute;
+                                display: block;
+                                content: "";
+                                left: 55px;
+                                bottom: 0;
+                                transform: scale(0, 1);
+                                width: 70px;
+                                height: 5px;
+                                background: #0DC0AD;
+                                transition: .3s;
+                            }
 
                             &.on {
                                 position: relative;
                                 color: #0DC0AD;
 
                                 &::after {
-                                    content: '';
-                                    display: block;
-                                    width: 70px;
-                                    height: 5px;
-                                    position: absolute;
-                                    left: 50%;
-                                    bottom: 0;
-                                    transform: translateX(-50%);
-                                    background-color: #0DC0AD;
+                                    transform: scale(1, 1);
                                 }
                             }
                         }
@@ -164,9 +196,11 @@
                             color: #666666;
                             letter-spacing: 1px;
                         }
+
                         .tab-box-img {
                             padding-top: 30px;
-                            img{
+
+                            img {
                                 width: 820px;
                             }
                         }

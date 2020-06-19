@@ -1,10 +1,36 @@
+@media screen and(min-width: 0)  {
+    .banner {
+        height: 460px;
+        padding-top: 18px;
+    }
+}
+
+@media screen and(min-width: 1180px)  {
+    .banner {
+        height: 550px;
+        padding-top: 52px;
+    }
+}
+
+@media screen and(min-width: 1280px)  {
+    .banner {
+        height: 660px;
+        padding-top: 88px;
+    }
+}
+
+@media screen and (min-width: 1365px)  {
+    .banner {
+        height: 750px;
+        padding-top: 150px;
+    }
+}
+
 .banner {
     max-width: 1920px;
-    height: 750px;
     margin: 0 auto;
     background: url(../images/commerce/banner_simeidianshang.png) no-repeat;
     background-size: cover;
-    padding-top: 150px;
     color: #fff;
 
     .banner-c {
@@ -82,6 +108,11 @@
                 box-shadow: 0px 4px 40px 0px #ECECED;
                 position: relative;
 
+                &>a{
+                    display: block;
+                    height: 100%;
+                }
+
                 img {
                     width: 100%;
                 }
@@ -94,6 +125,7 @@
                         font-size: 18px;
                         font-weight: bold;
                         margin-bottom: 5px;
+                        color: #333333;
                     }
 
                     .wz {
@@ -357,15 +389,20 @@
 
                 .tab-items {
                     flex: 1;
+                    position: relative;
+                    overflow: hidden;
 
                     .tab-item {
-                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
                         width: 100%;
                         height: 100%;
                         padding-left: 25px;
+                        transition: all .3s;
 
                         &.active {
-                            display: block;
+                            top: 0;
                         }
 
                         .img-box {

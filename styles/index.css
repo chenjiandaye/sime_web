@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .swper-box {
   max-width: 1920px;
-  height: 750px;
+  max-height: 750px;
   margin: 0 auto;
 }
 
@@ -24,13 +24,16 @@
   left: 50%;
   transform: translateX(-50%);
   width: 1180px;
-  height: 750px;
+  height: 100%;
   margin: 0 auto;
   color: #333333;
 }
 
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info.white {
+  color: #fff;
+}
+
 .swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-tit {
-  margin-top: 110px;
   font-size: 60px;
 }
 
@@ -55,8 +58,23 @@
   margin-top: 60px;
 }
 
-.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-btnbox > button {
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-btnbox.ds button {
   background-color: #FFBE54;
+}
+
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-btnbox.jy button {
+  background-color: #0DC0AD;
+}
+
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-btnbox.jd button {
+  background-color: #37A3E6;
+}
+
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-btnbox.ab button {
+  background-color: #F84335;
+}
+
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-btnbox > button {
   border-radius: 3px;
   display: inline-block;
   cursor: pointer;
@@ -82,7 +100,7 @@
   height: 48px;
 }
 
-.swper-box .swiper-container .swiper-wrapper .swiper-slide a .img {
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a img {
   display: block;
   position: relative;
   width: 100%;
@@ -150,8 +168,26 @@
 }
 
 .main .content-top .top-text .text-right .text-item {
+  flex: 1;
   position: relative;
   padding-left: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  padding-right: 60px;
+}
+
+.main .content-top .top-text .text-right .text-item a {
+  color: #333333;
+}
+
+.main .content-top .top-text .text-right .text-item .li-r {
+  position: absolute;
+  right: 0;
+  top: 0;
+  float: right;
+  padding: 0 10px;
 }
 
 .main .content-top .top-text .text-right .text-item::before {
@@ -170,10 +206,11 @@
 .main .knows {
   width: 1180px;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 .main .knows .know-top {
-  height: 327px;
+  height: 230px;
   text-align: center;
   overflow: hidden;
 }
@@ -194,15 +231,8 @@
 
 .main .knows .know-items {
   position: relative;
-  height: 530px;
-  margin-bottom: 100px;
-}
-
-.main .knows .know-items .item-tit {
-  text-align: center;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: 2px;
+  height: 540px;
+  margin-bottom: 50px;
 }
 
 .main .knows .know-items.keep-left .item-left {
@@ -210,9 +240,11 @@
   left: 0;
   top: 60px;
   width: 680px;
-  height: 400px;
   z-index: 1;
-  background-color: pink;
+}
+
+.main .knows .know-items.keep-left .item-left img {
+  width: 100%;
 }
 
 .main .knows .know-items.keep-left .item-right {
@@ -220,14 +252,15 @@
   position: absolute;
   right: 0;
   top: 60px;
-  width: 680px;
-  height: 400px;
+  width: 530px;
   z-index: 2;
 }
 
 .main .knows .know-items.keep-left .item-right h4 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 
 .main .knows .know-items.keep-left .item-right p {
@@ -270,15 +303,16 @@
   position: absolute;
   left: 0;
   top: 60px;
-  width: 680px;
-  height: 400px;
+  width: 530px;
   z-index: 2;
   cursor: pointer;
 }
 
 .main .knows .know-items.keep-right .item-left h4 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 
 .main .knows .know-items.keep-right .item-left p {
@@ -320,114 +354,78 @@
   right: 0;
   top: 60px;
   width: 680px;
-  height: 400px;
   z-index: 1;
-  background-color: pink;
+}
+
+.main .knows .know-items.keep-right .item-right img {
+  width: 100%;
 }
 
 .main .our-services {
-  max-width: 1920px;
-  height: 800px;
-  margin: 0 auto;
-  background-color: pink;
-  background: url(../images/home/bg_home_fuwu.png) no-repeat;
-  background-size: cover;
+  background-color: #F3F4F5;
   text-align: center;
-  color: #fff;
-  padding-top: 150px;
 }
 
 .main .our-services .ser-layer {
-  position: relative;
+  width: 1180px;
+  height: 900px;
+  margin: 0 auto;
 }
 
 .main .our-services .ser-tit {
   font-size: 36px;
   letter-spacing: 3px;
+  padding-top: 100px;
   margin-bottom: 20px;
 }
 
-.main .our-services .p-txt {
+.main .our-services .p-text {
   font-size: 18px;
-  line-height: 30px;
+  color: #888888;
   letter-spacing: 1px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .main .our-services .ser-bot {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  flex-wrap: wrap;
   margin: 100px auto 0;
 }
 
 .main .our-services .ser-bot .ser-item {
-  flex: 1;
   text-align: center;
+  margin-bottom: 110px;
 }
 
 .main .our-services .ser-bot .ser-item img {
-  width: 134px;
+  width: 120px;
 }
 
-.main .our-services .ser-bot .ser-item .ser-txt {
-  letter-spacing: 1px;
-  margin-top: 24px;
-}
-
-.main .our-services .ser-bot .ser-item .ser-txt .serve {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.main .our-services .ser-bot .ser-item .ser-txt .exp {
-  font-size: 14px;
-}
-
-.main .flow {
-  width: 1180px;
-  height: 1150px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 120px;
-}
-
-.main .flow .f-tit {
-  font-size: 36px;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-}
-
-.main .flow .f-text {
+.main .our-services .ser-bot .ser-item p {
   font-size: 18px;
-  color: #888888;
-  letter-spacing: 1px;
-}
-
-.main .flow .f-chart .chart-layer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1180px;
-  height: 733px;
-  margin: 100px auto 0;
-  background: url(../images/home/bg_home_liucheng.png) no-repeat;
-  background-size: cover;
-}
-
-.main .flow .f-chart .chart-layer .chart-item {
-  width: 25%;
-  height: 263px;
-  text-align: center;
-  padding-top: 23px;
-}
-
-.main .flow .f-chart .chart-layer .chart-item img {
-  width: 110px;
-}
-
-.main .flow .f-chart .chart-layer .chart-item p {
-  font-size: 18px;
-  color: #666666;
+  letter-spacing: 2px;
   margin-top: 20px;
+}
+
+.main .our-services .ser-bot .ser-item-arrow {
+  margin-top: 50px;
+}
+
+.main .our-services .ser-bot .ser-item-arrow img {
+  width: 40px;
+}
+
+.main .our-services .ser-bot .ser-item-arrow-bot {
+  position: absolute;
+  right: 46px;
+  top: 200px;
+}
+
+.main .our-services .ser-bot .ser-item-arrow-bot img {
+  height: 40px;
 }
 
 .main .sell {
@@ -450,17 +448,21 @@
 .main .sell .sell-layer .arrows {
   width: 86px;
   height: 40px;
-  margin-top: 102px;
+  margin-top: 165px;
 }
 
 .main .sell .sell-layer .sell-item {
-  width: 190px;
-  padding-top: 80px;
+  width: 320px;
+  height: 360px;
   text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #333333;
+  padding-top: 20px;
 }
 
 .main .sell .sell-layer .sell-item img {
-  width: 43px;
+  width: 80px;
 }
 
 .main .sell .sell-layer .sell-item .sell-tit {
@@ -470,9 +472,9 @@
 }
 
 .main .sell .sell-layer .sell-item p {
-  position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   letter-spacing: 1px;
+  color: #555555;
 }
 
 .main .sell .sell-layer .sell-item p::before {
@@ -481,10 +483,10 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  top: 9px;
+  background-color: #555555;
+  position: relative;
+  left: -10px;
+  top: -2px;
 }
 
 .main .advantage {
@@ -600,19 +602,18 @@
 }
 
 .main .dynamic .dyn-layer .dyn-item-box .dyn-item .dyn-img {
-  width: 100%;
   height: 180px;
   overflow: hidden;
-  background-color: pink;
+  text-align: center;
 }
 
 .main .dynamic .dyn-layer .dyn-item-box .dyn-item .dyn-img img {
-  width: 100%;
+  height: 100%;
 }
 
 .main .dynamic .dyn-layer .dyn-item-box .dyn-item .dyn-c {
   width: 100%;
-  padding: 10px 20px 0;
+  padding: 10px 20px;
 }
 
 .main .dynamic .dyn-layer .dyn-item-box .dyn-item .dyn-c .dyn-c-t {
@@ -627,6 +628,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #333333;
 }
 
 .main .dynamic .dyn-layer .dyn-item-box .dyn-item .dyn-c .dyn-c-t .time {
@@ -639,6 +641,11 @@
   font-size: 14px;
   line-height: 26px;
   color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .main .dynamic .dyn-layer .dyn-bot-btn {
