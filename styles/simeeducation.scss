@@ -78,9 +78,9 @@
         margin: 0 auto;
 
         .edu-centre-tit {
-            height: 220px;
+            height: 182px;
             text-align: center;
-            padding-top: 100px;
+            padding-top: 80px;
             font-size: 32px;
             letter-spacing: 2px;
         }
@@ -90,7 +90,7 @@
             height: 160px;
             padding: 40px 60px 0;
             font-size: 16px;
-            color: #666666;
+            color: #444444;
             line-height: 28px;
             letter-spacing: 1px;
             margin-bottom: 108px;
@@ -114,7 +114,7 @@
     }
 
     .trait {
-        padding-top: 100px;
+        padding-top: 80px;
         background-color: #f5f5f5;
 
         .trait-layer {
@@ -213,12 +213,12 @@
     .capacity {
         width: 1180px;
         margin: 0 auto;
-        padding-top: 100px;
+        padding-top: 80px;
 
         .capacity-tit {
             font-size: 32px;
             letter-spacing: 2px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             text-align: center;
         }
 
@@ -226,6 +226,7 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            margin-bottom: 100px;
 
             .capacity-item {
                 display: flex;
@@ -235,6 +236,8 @@
                 padding: 0 30px;
                 box-shadow: 0px 5px 50px 0px #ECECED;
                 margin-bottom: 30px;
+                border-radius:10px;
+                overflow: hidden;
 
                 img {
                     width: 120px;
@@ -262,11 +265,11 @@
         .apply-layer {
             width: 1180px;
             margin: 0 auto;
-            padding-top: 100px;
+            padding-top: 80px;
             padding-bottom: 100px;
 
             .apply-tit {
-                height: 115px;
+                height: 100px;
                 font-size: 32px;
                 text-align: center;
                 letter-spacing: 2px;

@@ -66,10 +66,12 @@
 .main .news-items .news-item .item-img {
   width: 460px;
   padding-right: 80px;
+  text-align: center;
 }
 
 .main .news-items .news-item .item-img img {
   max-width: 380px;
+  max-height: 264px;
 }
 
 .main .news-items .news-item .item-info {
@@ -94,7 +96,12 @@
   font-size: 15px;
   color: #666666;
   line-height: 28px;
-  margin-top: 40px;
+  margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
 }
 
 .advisory {

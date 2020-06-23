@@ -1,30 +1,31 @@
-@media screen and(min-width: 0)  {
+@media screen and(min-width: 0) {
     .banner {
         height: 460px;
         padding-top: 0px;
     }
 }
 
-@media screen and(min-width: 1180px)  {
+@media screen and(min-width: 1180px) {
     .banner {
         height: 550px;
         padding-top: 52px;
     }
 }
 
-@media screen and(min-width: 1280px)  {
+@media screen and(min-width: 1280px) {
     .banner {
         height: 660px;
         padding-top: 75px;
     }
 }
 
-@media screen and (min-width: 1365px)  {
+@media screen and (min-width: 1365px) {
     .banner {
         height: 750px;
         padding-top: 120px;
     }
 }
+
 .banner {
     max-width: 1920px;
     margin: 0 auto;
@@ -85,9 +86,9 @@
         margin: 0 auto;
 
         .b2b2c-shop-tit {
-            height: 220px;
+            height: 180px;
             text-align: center;
-            padding-top: 100px;
+            padding-top: 80px;
             font-size: 32px;
             letter-spacing: 2px;
         }
@@ -100,7 +101,7 @@
             color: #666666;
             line-height: 28px;
             letter-spacing: 1px;
-            margin-bottom: 108px;
+            margin-bottom: 98px;
             background-color: #F5F5F5;
 
             img {
@@ -121,38 +122,48 @@
     }
 
     .operation {
+        position: relative;
         max-width: 1920px;
         height: 1200px;
         margin: 0 auto;
-        padding-top: 100px;
-        color: #ffffff;
         background: url(../images/b2b2c/pexels-photo.png) no-repeat;
         background-size: cover;
 
-        .operation-layer {
-            width: 1180px;
-            margin: 0 auto;
+        .operation-white-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            padding-top: 80px;
+            background-color: rgba(255, 255, 255, .8);
 
-            .operation-tit {
-                font-size: 32px;
-                letter-spacing: 2px;
-                text-align: center;
-            }
+            .operation-layer {
+                width: 1180px;
+                margin: 0 auto;
 
-            .operation-txt {
-                font-size: 16px;
-                line-height: 28px;
-                letter-spacing: 1px;
-                margin-top: 50px;
-                margin-bottom: 60px;
-                text-indent: 2em;
-            }
+                .operation-tit {
+                    font-size: 32px;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
 
-            .operation-img {
-                text-align: center;
+                .operation-txt {
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                    margin-top: 50px;
+                    margin-bottom: 60px;
+                    text-indent: 2em;
+                    color: #444444;
+                }
 
-                img {
-                    width: 1100px;
+                .operation-img {
+                    text-align: center;
+
+                    img {
+                        width: 1100px;
+                    }
                 }
             }
         }
@@ -174,13 +185,15 @@
             &.left-top {
                 left: 0;
                 top: 50px;
-                background: linear-gradient(270deg, rgba(247, 246, 255, 1) 0%, rgba(235, 233, 255, 1) 100%);
+                background: url(../images/b2b2c/yuan1.png) no-repeat;
+                background-size: cover;
             }
 
             &.right-bottom {
                 bottom: 10px;
                 right: 0;
-                background: linear-gradient(270deg, rgba(235, 233, 255, 1) 0%, rgba(247, 246, 255, 1) 100%);
+                background: url(../images/b2b2c/yuan2.png) no-repeat;
+                background-size: cover;
             }
         }
 
@@ -254,7 +267,7 @@
         .management-layer {
             width: 1180px;
             margin: 0 auto;
-            padding-top: 100px;
+            padding-top: 80px;
             padding-bottom: 68px;
 
             .management-tit {

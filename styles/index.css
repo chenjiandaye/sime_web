@@ -163,6 +163,7 @@
 .main .content-top .top-text .text-right {
   float: right;
   width: 1080px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -171,22 +172,19 @@
   flex: 1;
   position: relative;
   padding-left: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  position: relative;
-  padding-right: 60px;
 }
 
 .main .content-top .top-text .text-right .text-item a {
+  float: left;
   color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 280px;
 }
 
 .main .content-top .top-text .text-right .text-item .li-r {
-  position: absolute;
-  right: 0;
-  top: 0;
-  float: right;
+  float: left;
   padding: 0 10px;
 }
 

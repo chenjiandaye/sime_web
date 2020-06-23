@@ -598,7 +598,7 @@ header .h-layer .h_info .info_phone p:first-child {
   display: none;
   position: fixed;
   right: 0;
-  bottom: 5%;
+  bottom: 25%;
   cursor: pointer;
   opacity: .7;
   z-index: 9;
@@ -606,6 +606,8 @@ header .h-layer .h_info .info_phone p:first-child {
   height: 60px;
   background: url(../images/common/gotop.png) no-repeat;
   background-size: cover;
+  box-shadow: 0 0 10px 5px #DDDDDD;
+  border-radius: 5px;
 }
 
 .btnTop:hover {

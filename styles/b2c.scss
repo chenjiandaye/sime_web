@@ -1,25 +1,25 @@
-@media screen and(min-width: 0)  {
+@media screen and(min-width: 0) {
     .banner {
         height: 460px;
         padding-top: 0px;
     }
 }
 
-@media screen and(min-width: 1180px)  {
+@media screen and(min-width: 1180px) {
     .banner {
         height: 550px;
         padding-top: 52px;
     }
 }
 
-@media screen and(min-width: 1280px)  {
+@media screen and(min-width: 1280px) {
     .banner {
         height: 660px;
         padding-top: 75px;
     }
 }
 
-@media screen and (min-width: 1365px)  {
+@media screen and (min-width: 1365px) {
     .banner {
         height: 750px;
         padding-top: 120px;
@@ -86,36 +86,39 @@
         margin: 0 auto;
 
         .b2c-shop-tit {
-            height: 190px;
-            padding-top: 100px;
+            height: 180px;
             text-align: center;
+            padding-top: 80px;
             font-size: 32px;
             letter-spacing: 2px;
         }
 
-        .b2c-shop-txt {
-            font-size: 16px;
-            color: #666666;
-            line-height: 28px;
-            letter-spacing: 1px;
-        }
+        .b2c-shop-int {
+            position: relative;
+            padding: 40px 60px;
+            margin-bottom: 90px;
+            background-color: #F5F5F5;
 
-        .b2c-shop-p {
-            font-size: 20px;
-            font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
-            font-weight: bold;
-            line-height: 32px;
-            letter-spacing: 1px;
-            margin-top: 20px;
-        }
-
-        .b2c-shop-img {
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 70px;
+            p {
+                font-size: 16px;
+                color: #444444;
+                line-height: 28px;
+                letter-spacing: 1px;
+            }
 
             img {
-                width: 980px;
+                width: 60px;
+                position: absolute;
+
+                &.left-marks {
+                    left: 0;
+                    top: 0;
+                }
+
+                &.right-marks {
+                    right: 0;
+                    bottom: 0;
+                }
             }
         }
     }
@@ -128,8 +131,8 @@
             margin: 0 auto;
 
             .b2c-flow-tit {
-                height: 220px;
-                padding-top: 100px;
+                height: 180px;
+                padding-top: 80px;
                 font-size: 32px;
                 text-align: center;
                 letter-spacing: 2px;
@@ -243,8 +246,8 @@
         margin: 0 auto;
 
         .management-tit {
-            height: 220px;
-            padding-top: 100px;
+            height: 180px;
+            padding-top: 80px;
             font-size: 32px;
             letter-spacing: 2px;
             text-align: center;

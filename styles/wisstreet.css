@@ -76,9 +76,9 @@
 }
 
 .main .product-use .product-use-tit {
-  height: 220px;
+  height: 180px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   font-size: 32px;
   letter-spacing: 2px;
 }
@@ -88,7 +88,7 @@
   height: 160px;
   padding: 40px 60px 0;
   font-size: 16px;
-  color: #666666;
+  color: #444444;
   line-height: 28px;
   letter-spacing: 1px;
   margin-bottom: 108px;
@@ -111,13 +111,13 @@
 }
 
 .main .features {
-  padding-top: 50px;
+  padding-top: 80px;
   background-color: #f5f5f5;
 }
 
 .main .features .features-layer {
   width: 1180px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   margin: 0 auto;
 }
 
@@ -131,7 +131,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 28px;
+  margin-top: 70px;
 }
 
 .main .features .features-layer .features-items .features-item {
@@ -259,8 +259,8 @@
 }
 
 .main .gismap {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 90px;
   width: 1180px;
   margin: 0 auto;
 }
@@ -297,7 +297,7 @@
 .main .management .management-layer {
   width: 1180px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 70px;
 }
 
@@ -311,7 +311,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .main .management .management-layer .management-module .module-item {
@@ -321,6 +321,8 @@
   box-shadow: 0px 3px 35px 0px rgba(217, 218, 219, 0.8);
   border-radius: 10px;
   margin-bottom: 40px;
+  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi.png) no-repeat;
+  background-size: cover;
 }
 
 .main .management .management-layer .management-module .module-item .item-name {
@@ -349,66 +351,6 @@
   font-family: MicrosoftYaHei;
   color: #888888;
   line-height: 20px;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(1) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi1.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(2) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi2.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(3) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi3.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(4) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi4.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(5) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi5.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(6) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi6.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(7) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi7.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(8) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi8.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(9) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi9.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(10) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi10.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(11) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi11.png) no-repeat;
-  background-size: cover;
-}
-
-.main .management .management-layer .management-module .module-item:nth-of-type(12) {
-  background: url(../images/wisstreet/icon/bg_street_xiaqushezhi12.png) no-repeat;
-  background-size: cover;
 }
 
 .main .things {

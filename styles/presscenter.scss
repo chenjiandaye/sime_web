@@ -1,25 +1,25 @@
-@media screen and(min-width: 0)  {
+@media screen and(min-width: 0) {
     .banner {
         height: 250px;
         padding-top: 0px;
     }
 }
 
-@media screen and(min-width: 1180px)  {
+@media screen and(min-width: 1180px) {
     .banner {
         height: 300px;
         padding-top: 52px;
     }
 }
 
-@media screen and(min-width: 1280px)  {
+@media screen and(min-width: 1280px) {
     .banner {
         height: 350px;
         padding-top: 75px;
     }
 }
 
-@media screen and (min-width: 1365px)  {
+@media screen and (min-width: 1365px) {
     .banner {
         height: 400px;
         padding-top: 120px;
@@ -65,9 +65,11 @@
             .item-img {
                 width: 460px;
                 padding-right: 80px;
+                text-align: center;
 
                 img {
                     max-width: 380px;
+                    max-height: 264px;
                 }
             }
 
@@ -92,7 +94,12 @@
                     font-size: 15px;
                     color: #666666;
                     line-height: 28px;
-                    margin-top: 40px;
+                    margin-top: 20px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 7;
+                    -webkit-box-orient: vertical;
                 }
             }
         }

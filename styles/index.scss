@@ -176,6 +176,7 @@
             .text-right {
                 float: right;
                 width: 1080px;
+                height: 50px;
                 display: flex;
                 justify-content: space-between;
 
@@ -183,21 +184,18 @@
                     flex: 1;
                     position: relative;
                     padding-left: 16px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    position: relative;
-                    padding-right: 60px;
 
                     a {
+                        float: left;
                         color: #333333;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        max-width: 280px;
                     }
 
                     .li-r {
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        float: right;
+                        float: left;
                         padding: 0 10px;
                     }
 
@@ -426,17 +424,21 @@
                     margin-top: 20px;
                 }
             }
+
             .ser-item-arrow {
                 margin-top: 50px;
-                img{
+
+                img {
                     width: 40px;
                 }
             }
+
             .ser-item-arrow-bot {
                 position: absolute;
                 right: 46px;
                 top: 200px;
-                img{
+
+                img {
                     height: 40px;
                 }
             }

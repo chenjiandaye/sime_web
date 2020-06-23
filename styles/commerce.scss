@@ -1,25 +1,25 @@
-@media screen and(min-width: 0)  {
+@media screen and(min-width: 0) {
     .banner {
         height: 460px;
         padding-top: 18px;
     }
 }
 
-@media screen and(min-width: 1180px)  {
+@media screen and(min-width: 1180px) {
     .banner {
         height: 550px;
         padding-top: 52px;
     }
 }
 
-@media screen and(min-width: 1280px)  {
+@media screen and(min-width: 1280px) {
     .banner {
         height: 660px;
         padding-top: 88px;
     }
 }
 
-@media screen and (min-width: 1365px)  {
+@media screen and (min-width: 1365px) {
     .banner {
         height: 750px;
         padding-top: 150px;
@@ -108,7 +108,7 @@
                 box-shadow: 0px 4px 40px 0px #ECECED;
                 position: relative;
 
-                &>a{
+                &>a {
                     display: block;
                     height: 100%;
                 }
@@ -183,25 +183,31 @@
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                margin-top: 60px;
 
                 .channel-item {
                     width: 265px;
-                    height: 180px;
-                    border-radius: 10px;
+                    height: 300px;
+                    border: 1px solid #ddd;
+
+                    p {
+                        line-height: 68px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-family: MicrosoftYaHei;
+                        letter-spacing: 1px;
+                    }
 
                     &.chang {
                         width: 570px;
                     }
 
                     &.shang {
-                        height: 300px;
                         margin-bottom: 40px;
                     }
 
                     img {
                         width: 100%;
-                        height: 100%;
+                        height: 220px;
                     }
                 }
             }
@@ -269,6 +275,7 @@
     }
 
     .wending {
+        position: relative;
         max-width: 1920px;
         height: 920px;
         margin: 70px auto 0;
@@ -277,8 +284,77 @@
         text-align: center;
         padding-top: 110px;
 
-        img {
-            width: 950px;
+        .wending-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .8);
+
+            .wending-mid {
+                width: 1180px;
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+
+                .text-box-center {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 420px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .text-box {
+                    position: absolute;
+                    height: 163px;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    &:nth-of-type(1) {
+                        width: 220px;
+                        left: 300px;
+                        top: 100px;
+                    }
+
+                    &:nth-of-type(2) {
+                        width: 220px;
+                        right: 300px;
+                        top: 100px;
+                    }
+
+                    &:nth-of-type(3) {
+                        width: 238px;
+                        right: 60px;
+                        top: 372px;
+                    }
+
+                    &:nth-of-type(4) {
+                        width: 220px;
+                        right: 300px;
+                        bottom: 115px;
+                    }
+
+                    &:nth-of-type(5) {
+                        width: 220px;
+                        left: 300px;
+                        bottom: 115px;
+                    }
+
+                    &:nth-of-type(6) {
+                        width: 238px;
+                        left: 60px;
+                        top: 372px;
+                    }
+                }
+            }
         }
     }
 
@@ -344,17 +420,26 @@
     }
 
     .case {
+        position: relative;
         max-width: 1920px;
         height: 800px;
         margin: 0 auto;
         background: url(../images/commerce/bg_dianshang_anli.png) no-repeat;
         background-size: cover;
 
+        .case-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .8);
+        }
+
         .case-tab {
             width: 1180px;
             margin: 0 auto;
             padding-top: 100px;
-            color: #fff;
 
             .case-tit {
                 text-align: center;
@@ -370,7 +455,7 @@
                 .tab-btn {
                     width: 180px;
                     height: 100%;
-                    border-right: 2px solid #fff;
+                    border-right: 2px solid #888888;
 
                     li {
                         width: 160px;
@@ -382,7 +467,7 @@
 
                         &.on {
                             border-radius: 5px;
-                            border: 1px solid #fff;
+                            border: 1px solid #333333;
                         }
                     }
                 }
@@ -409,6 +494,7 @@
                             width: 490px;
                             height: 100%;
                             float: left;
+
                             img {
                                 width: 100%;
                             }
@@ -429,7 +515,7 @@
                                 padding-bottom: 100px;
                                 font-size: 15px;
                                 line-height: 28px;
-                                border-bottom: 1px dashed #fff;
+                                border-bottom: 1px dashed #666666;
                             }
 
                             .ms-box {

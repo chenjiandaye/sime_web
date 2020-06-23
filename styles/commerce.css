@@ -184,13 +184,20 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 60px;
 }
 
 .main .channel .channel-layer .channel-item-box .channel-item {
   width: 265px;
-  height: 180px;
-  border-radius: 10px;
+  height: 300px;
+  border: 1px solid #ddd;
+}
+
+.main .channel .channel-layer .channel-item-box .channel-item p {
+  line-height: 68px;
+  text-align: center;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
 }
 
 .main .channel .channel-layer .channel-item-box .channel-item.chang {
@@ -198,13 +205,12 @@
 }
 
 .main .channel .channel-layer .channel-item-box .channel-item.shang {
-  height: 300px;
   margin-bottom: 40px;
 }
 
 .main .channel .channel-layer .channel-item-box .channel-item img {
   width: 100%;
-  height: 100%;
+  height: 220px;
 }
 
 .main .promotion {
@@ -267,6 +273,7 @@
 }
 
 .main .wending {
+  position: relative;
   max-width: 1920px;
   height: 920px;
   margin: 70px auto 0;
@@ -276,8 +283,77 @@
   padding-top: 110px;
 }
 
-.main .wending img {
-  width: 950px;
+.main .wending .wending-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main .wending .wending-layer .wending-mid {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main .wending .wending-layer .wending-mid .text-box-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+}
+
+.main .wending .wending-layer .wending-mid .text-box-center img {
+  width: 100%;
+}
+
+.main .wending .wending-layer .wending-mid .text-box {
+  position: absolute;
+  height: 163px;
+}
+
+.main .wending .wending-layer .wending-mid .text-box img {
+  width: 100%;
+}
+
+.main .wending .wending-layer .wending-mid .text-box:nth-of-type(1) {
+  width: 220px;
+  left: 300px;
+  top: 100px;
+}
+
+.main .wending .wending-layer .wending-mid .text-box:nth-of-type(2) {
+  width: 220px;
+  right: 300px;
+  top: 100px;
+}
+
+.main .wending .wending-layer .wending-mid .text-box:nth-of-type(3) {
+  width: 238px;
+  right: 60px;
+  top: 372px;
+}
+
+.main .wending .wending-layer .wending-mid .text-box:nth-of-type(4) {
+  width: 220px;
+  right: 300px;
+  bottom: 115px;
+}
+
+.main .wending .wending-layer .wending-mid .text-box:nth-of-type(5) {
+  width: 220px;
+  left: 300px;
+  bottom: 115px;
+}
+
+.main .wending .wending-layer .wending-mid .text-box:nth-of-type(6) {
+  width: 238px;
+  left: 60px;
+  top: 372px;
 }
 
 .main .preponderance {
@@ -342,6 +418,7 @@
 }
 
 .main .case {
+  position: relative;
   max-width: 1920px;
   height: 800px;
   margin: 0 auto;
@@ -349,11 +426,19 @@
   background-size: cover;
 }
 
+.main .case .case-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .main .case .case-tab {
   width: 1180px;
   margin: 0 auto;
   padding-top: 100px;
-  color: #fff;
 }
 
 .main .case .case-tab .case-tit {
@@ -371,7 +456,7 @@
 .main .case .case-tab .case-tab-box .tab-btn {
   width: 180px;
   height: 100%;
-  border-right: 2px solid #fff;
+  border-right: 2px solid #888888;
 }
 
 .main .case .case-tab .case-tab-box .tab-btn li {
@@ -385,7 +470,7 @@
 
 .main .case .case-tab .case-tab-box .tab-btn li.on {
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #333333;
 }
 
 .main .case .case-tab .case-tab-box .tab-items {
@@ -434,7 +519,7 @@
   padding-bottom: 100px;
   font-size: 15px;
   line-height: 28px;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #666666;
 }
 
 .main .case .case-tab .case-tab-box .tab-items .tab-item .wzjs .ms-box {

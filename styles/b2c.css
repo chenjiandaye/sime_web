@@ -84,37 +84,40 @@
 }
 
 .main .b2c-shop .b2c-shop-tit {
-  height: 190px;
-  padding-top: 100px;
+  height: 180px;
   text-align: center;
+  padding-top: 80px;
   font-size: 32px;
   letter-spacing: 2px;
 }
 
-.main .b2c-shop .b2c-shop-txt {
+.main .b2c-shop .b2c-shop-int {
+  position: relative;
+  padding: 40px 60px;
+  margin-bottom: 90px;
+  background-color: #F5F5F5;
+}
+
+.main .b2c-shop .b2c-shop-int p {
   font-size: 16px;
-  color: #666666;
+  color: #444444;
   line-height: 28px;
   letter-spacing: 1px;
 }
 
-.main .b2c-shop .b2c-shop-p {
-  font-size: 20px;
-  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
-  font-weight: bold;
-  line-height: 32px;
-  letter-spacing: 1px;
-  margin-top: 20px;
+.main .b2c-shop .b2c-shop-int img {
+  width: 60px;
+  position: absolute;
 }
 
-.main .b2c-shop .b2c-shop-img {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 70px;
+.main .b2c-shop .b2c-shop-int img.left-marks {
+  left: 0;
+  top: 0;
 }
 
-.main .b2c-shop .b2c-shop-img img {
-  width: 980px;
+.main .b2c-shop .b2c-shop-int img.right-marks {
+  right: 0;
+  bottom: 0;
 }
 
 .main .b2c-flow {
@@ -127,8 +130,8 @@
 }
 
 .main .b2c-flow .flow-layer .b2c-flow-tit {
-  height: 220px;
-  padding-top: 100px;
+  height: 180px;
+  padding-top: 80px;
   font-size: 32px;
   text-align: center;
   letter-spacing: 2px;
@@ -241,8 +244,8 @@
 }
 
 .main .management .management-tit {
-  height: 220px;
-  padding-top: 100px;
+  height: 180px;
+  padding-top: 80px;
   font-size: 32px;
   letter-spacing: 2px;
   text-align: center;

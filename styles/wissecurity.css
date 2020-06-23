@@ -77,387 +77,342 @@
 
 .main .security-centre .security-centre-tit {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   font-size: 32px;
   letter-spacing: 2px;
 }
 
-.main .security-centre .security-centre-image-text {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 75px;
+.main .security-centre .security-centre-items {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  overflow: hidden;
 }
 
-.main .security-centre .security-centre-image-text .security-centre-image,
-.main .security-centre .security-centre-image-text .security-centre-text {
+.main .security-centre .security-centre-items .security-centre-item {
+  width: 520px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.main .security-centre .security-centre-items .security-centre-item .l {
+  width: 120px;
+  margin-right: 40px;
+}
+
+.main .security-centre .security-centre-items .security-centre-item .l img {
+  width: 100%;
+}
+
+.main .security-centre .security-centre-items .security-centre-item .r {
   flex: 1;
 }
 
-.main .security-centre .security-centre-image-text img {
-  width: 580px;
+.main .security-centre .security-centre-items .security-centre-item .r .r-tit {
+  color: #333333;
+  font-size: 22px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.main .security-centre .security-centre-image-text p {
+.main .security-centre .security-centre-items .security-centre-item .r p {
   font-size: 16px;
+  font-family: MicrosoftYaHei;
   color: #666666;
   line-height: 28px;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
 }
 
-.main .security-centre .security-centre-image-text p em {
-  font-style: normal;
-  color: #F84335;
-  font-weight: 700;
+.main .security-centre .security-centre-items .security-centre-item.left {
+  float: left;
+}
+
+.main .security-centre .security-centre-items .security-centre-item.right {
+  float: right;
 }
 
 .main .trait {
+  position: relative;
   max-width: 1920px;
-  background: url(../images/wissecurity/bg_anbao_tedian.png) no-repeat;
+  height: 900px;
+  background: url(../images/wissecurity/anbao_bg1.png) no-repeat;
   background-size: cover;
   margin: 0 auto;
 }
 
-.main .trait .trait-layer {
-  width: 1180px;
-  padding-top: 100px;
-  height: 500px;
-  margin: 0 auto;
-  color: #fff;
-}
-
-.main .trait .trait-layer .trait-tit {
-  font-size: 32px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.main .trait .trait-layer .trait-list-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 80px;
-}
-
-.main .trait .trait-layer .trait-list-box .trait-list {
-  background: url(../images/wissecurity/quan.png) no-repeat;
-  background-size: 14px;
-  background-position: left 4px;
-  width: 50%;
-  padding-left: 18px;
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-
-.main .structure .flag {
+.main .trait .trait-white-layer {
   position: absolute;
   left: 0;
-  top: 20px;
-  font-size: 48px;
-  font-family: Helvetica-Bold, Helvetica;
-  font-weight: bold;
-  color: #F3F3F3;
-  line-height: 58px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.main .structure .structure-tit-box {
-  padding-top: 100px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.main .structure .structure-tit-box .structure-tit {
-  font-size: 32px;
-  letter-spacing: 2px;
-}
-
-.main .structure .structure-tit-box .structure-txt {
-  margin-top: 80px;
-  font-size: 28px;
-  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
-  font-weight: bold;
-  color: #F84335;
-  letter-spacing: 5px;
-}
-
-.main .structure .lead .lead-layer {
+.main .trait .trait-layer {
   position: relative;
   width: 1180px;
+  height: 100%;
   margin: 0 auto;
 }
 
-.main .structure .lead .lead-layer .lead-name {
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding-top: 40px;
-}
-
-.main .structure .lead .lead-layer .lead-cir-out {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  margin: 0 auto;
-  border: 5px solid #FFE9EA;
-  margin-bottom: 64px;
-  margin-top: 40px;
-}
-
-.main .structure .lead .lead-layer .lead-cir-out .lead-cir-in {
+.main .trait .trait-layer .center-cir {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  border-radius: 50%;
-  background: #FF6F65;
-  font-size: 26px;
-  font-family: Helvetica-Bold, Helvetica;
-  font-weight: bold;
-  color: #fff;
-  line-height: 31px;
-  padding-top: 41px;
+  transform: translate(-50%, -53%);
+  width: 470px;
+  height: 470px;
+  background: url(../images/wissecurity/kunjing.png) no-repeat;
+  background-size: cover;
+  z-index: 0;
 }
 
-.main .structure .security-personnel {
-  background-color: #F5F5F5;
-}
-
-.main .structure .security-personnel .personnel-layer {
-  position: relative;
-  width: 1180px;
-  margin: 0 auto;
-}
-
-.main .structure .security-personnel .personnel-layer .flag {
-  color: #E8E8E8;
-}
-
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qiqiu {
+.main .trait .trait-layer .tradit-item {
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background: #FFE9EA;
-  border-radius: 50%;
-  color: #F84335;
-  letter-spacing: 2px;
+  width: 250px;
+  height: 160px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 40px 0px #ececed;
   z-index: 1;
 }
 
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq1 {
-  left: 240px;
-  top: 90px;
-  width: 80px;
-  height: 80px;
-  font-size: 15px;
+.main .trait .trait-layer .tradit-item:nth-of-type(1) {
+  top: 83px;
+  left: 465px;
+  background: linear-gradient(360deg, #87e2fa 0%, #4fb9fe 100%);
 }
 
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq2 {
-  left: 100px;
-  top: 170px;
-  width: 100px;
-  height: 100px;
+.main .trait .trait-layer .tradit-item:nth-of-type(2) {
+  top: 353px;
+  right: 150px;
+  background: linear-gradient(360deg, #87e0c1 0%, #52d9d1 100%);
+}
+
+.main .trait .trait-layer .tradit-item:nth-of-type(3) {
+  bottom: 117px;
+  right: 280px;
+  background: linear-gradient(360deg, #ffa6b5 0%, #f28dbb 100%);
+}
+
+.main .trait .trait-layer .tradit-item:nth-of-type(4) {
+  bottom: 117px;
+  left: 280px;
+  background: linear-gradient(360deg, #a1afff 0%, #8796f0 100%);
+}
+
+.main .trait .trait-layer .tradit-item:nth-of-type(5) {
+  top: 353px;
+  left: 150px;
+  background: linear-gradient(360deg, #ffc7af 0%, #f2a48d 100%);
+}
+
+.main .trait .trait-layer .tradit-item .item-tit {
   font-size: 18px;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+  font-weight: bold;
 }
 
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq3 {
-  left: 36px;
-  top: 356px;
-  width: 108px;
-  height: 108px;
-  font-size: 20px;
+.main .trait .trait-layer .tradit-item p {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  line-height: 22px;
 }
 
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq4 {
-  left: 186px;
-  top: 450px;
-  width: 80px;
-  height: 80px;
-  font-size: 15px;
-}
-
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq5 {
-  left: 235px;
-  top: 595px;
-  width: 88px;
-  height: 88px;
-  font-size: 16px;
-}
-
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq6 {
-  right: 243px;
-  top: 123px;
-  width: 80px;
-  height: 80px;
-  font-size: 15px;
-}
-
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq7 {
-  right: 153px;
-  top: 240px;
-  width: 90px;
-  height: 90px;
-  font-size: 16px;
-}
-
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq8 {
-  right: 105px;
-  top: 423px;
-  width: 80px;
-  height: 80px;
-  font-size: 15px;
-}
-
-.main .structure .security-personnel .personnel-layer .qiqiu-box .qq9 {
-  right: 233px;
-  top: 500px;
-  width: 90px;
-  height: 90px;
-  font-size: 16px;
-}
-
-.main .structure .security-personnel .personnel-layer .personnel-name {
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding-top: 60px;
-}
-
-.main .structure .security-personnel .personnel-layer .personnel-iosand {
-  position: relative;
-  left: -10px;
+.main .trait .trait-layer .center-cir {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-  z-index: 2;
-  padding-bottom: 30px;
+  align-items: center;
 }
 
-.main .structure .security-personnel .personnel-layer .personnel-iosand img {
-  width: 244px;
-  height: 500px;
-}
-
-.main .structure .security-personnel .personnel-layer .personnel-iosand .ios {
-  margin-right: 50px;
-}
-
-.main .structure .security-personnel .personnel-layer .personnel-iosand p {
-  font-size: 15px;
-  color: #666666;
-  line-height: 20px;
+.main .trait .trait-layer .center-cir p {
   text-align: center;
-  margin-top: 20px;
 }
 
-.main .structure .manager.gray {
-  background-color: #F5F5F5;
+.main .trait .trait-layer .center-cir p:first-child {
+  font-size: 28px;
+  font-family: MicrosoftYaHei;
+  color: #333333;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
-.main .structure .manager.gray .flag {
-  color: #E8E8E8;
+.main .trait .trait-layer .center-cir p:last-child {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #aaaaaa;
+  line-height: 17px;
 }
 
-.main .structure .manager .manager-layer {
-  position: relative;
+.main .solve {
   width: 1180px;
+  height: 900px;
   margin: 0 auto;
-}
-
-.main .structure .manager .manager-layer .manager-name {
-  padding-top: 60px;
-  font-size: 20px;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.main .structure .manager .manager-layer .manager-img-box {
-  display: flex;
-  margin-top: 60px;
-  padding-bottom: 50px;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .left-img {
-  flex: 1;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .left-img img {
-  width: 630px;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .left-img img.anbaoweb {
-  width: 500px;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .right-img {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .right-img .ios {
-  margin-right: 50px;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .right-img img {
-  width: 690px;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .right-img .right-iosand img {
-  width: 244px;
-  height: 500px;
-}
-
-.main .structure .manager .manager-layer .manager-img-box .right-img .right-iosand p {
-  font-size: 15px;
-  color: #666666;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.main .structure .periphery .periphery-layer {
-  position: relative;
-  width: 1180px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.main .structure .periphery .periphery-layer .periphery-name {
   padding-top: 80px;
-  font-size: 20px;
-  letter-spacing: 1px;
 }
 
-.main .structure .periphery .periphery-layer .periphery-items {
-  display: flex;
-  justify-content: center;
-  margin-top: 55px;
-  margin-bottom: 84px;
+.main .solve .solve-tit {
+  text-align: center;
+  font-size: 32px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
-.main .structure .periphery .periphery-layer .periphery-items .periphery-item {
-  margin: 0 25px;
+.main .solve .solve-scheme {
+  position: relative;
+  height: 440px;
+  margin-top: 80px;
+  background: url(../images/wissecurity/fangantu.png) no-repeat;
+  background-size: 620px 440px;
+  background-position: center top;
 }
 
-.main .structure .periphery .periphery-layer .periphery-items .periphery-item img {
-  width: 80px;
-}
-
-.main .structure .periphery .periphery-layer .periphery-items .periphery-item p {
+.main .solve .solve-scheme .solve-scheme-item {
+  position: absolute;
+  width: 260px;
   font-size: 15px;
-  letter-spacing: 1px;
-  margin-top: 10px;
+  font-family: MicrosoftYaHei;
+  color: #555555;
+  line-height: 24px;
 }
 
-.main .capacity {
-  background-color: #F5F5F5;
+.main .solve .solve-scheme .solve-scheme-item.l {
+  text-align: right;
+}
+
+.main .solve .solve-scheme .solve-scheme-item:nth-of-type(1) {
+  left: 75px;
+  top: 0;
+}
+
+.main .solve .solve-scheme .solve-scheme-item:nth-of-type(2) {
+  right: 80px;
+  top: 18px;
+}
+
+.main .solve .solve-scheme .solve-scheme-item:nth-of-type(3) {
+  right: 0;
+  top: 187px;
+}
+
+.main .solve .solve-scheme .solve-scheme-item:nth-of-type(4) {
+  right: 80px;
+  bottom: 12px;
+}
+
+.main .solve .solve-scheme .solve-scheme-item:nth-of-type(5) {
+  left: 75px;
+  bottom: 12px;
+}
+
+.main .solve .solve-scheme .solve-scheme-item:nth-of-type(6) {
+  left: 0px;
+  top: 187px;
+}
+
+.main .solve .solve-arrow {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main .solve .solve-arrow img {
+  width: 29px;
+}
+
+.main .solve .solve-zj {
+  font-size: 22px;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main .solve .solve-zj em {
+  font-style: normal;
+  color: #F84335;
+}
+
+.main .alter {
+  background-color: #F6F6F6;
+}
+
+.main .alter .alter-layer {
+  width: 1180px;
+  height: 850px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.main .alter .alter-layer .alter-tit {
+  font-size: 32px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.main .alter .alter-layer .alter-ladder {
+  position: relative;
+  height: 633px;
+  background: url(../images/wissecurity/dajiantou.png) no-repeat;
+  background-size: 906px 573px;
+  background-position: 240px bottom;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item {
+  position: absolute;
+  line-height: 46px;
+  font-size: 20px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item .num {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 50px;
+  font-size: 24px;
+  font-family: DINAlternate-Bold, DINAlternate;
+  font-weight: bold;
+  color: #F84335;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item em {
+  font-style: normal;
+  color: #F84335;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item:nth-of-type(1) {
+  left: 28px;
+  bottom: 98px;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item:nth-of-type(2) {
+  left: 90px;
+  bottom: 194px;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item:nth-of-type(3) {
+  left: 294px;
+  bottom: 287px;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item:nth-of-type(4) {
+  left: 450px;
+  bottom: 348px;
+}
+
+.main .alter .alter-layer .alter-ladder .alter-ladder-item:nth-of-type(5) {
+  left: 605px;
+  bottom: 425px;
 }
 
 .main .capacity .capacity-layer {
@@ -469,7 +424,10 @@
   font-size: 32px;
   text-align: center;
   letter-spacing: 2px;
-  padding-top: 100px;
+  padding-top: 80px;
+  background: url(../images/wissecurity/yuandian.png) no-repeat;
+  background-size: 99px 73px;
+  background-position: 422px 65px;
 }
 
 .main .capacity .capacity-layer .capacity-module {
@@ -480,13 +438,18 @@
 
 .main .capacity .capacity-layer .capacity-module .module-item {
   float: left;
-  width: 270px;
-  height: 350px;
+  width: 265px;
+  height: 260px;
   background: #fff;
-  box-shadow: 0px 5px 50px 0px #ECECED;
+  box-shadow: 0px 4px 40px 0px #ececed;
   border-radius: 10px;
   margin-bottom: 40px;
   margin-right: 32px;
+  text-align: center;
+}
+
+.main .capacity .capacity-layer .capacity-module .module-item img {
+  width: 100px;
 }
 
 .main .capacity .capacity-layer .capacity-module .module-item:nth-of-type(4n+4) {
@@ -494,22 +457,206 @@
 }
 
 .main .capacity .capacity-layer .capacity-module .module-item .item-name {
-  text-align: center;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-top: 5px;
+  position: relative;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  line-height: 24px;
+}
+
+.main .capacity .capacity-layer .capacity-module .module-item .item-name::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background: #F84335;
+  border-radius: 2px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main .capacity .capacity-layer .capacity-module .module-item .item-text {
-  margin-top: 10px;
-  font-size: 13px;
+  margin-top: 30px;
+  font-size: 14px;
   color: #888888;
-  line-height: 22px;
+  line-height: 24px;
   padding: 0 30px;
 }
 
-.main .capacity .capacity-layer .capacity-module .module-item img {
+.main .synthesize {
+  background-color: #F6F6F6;
+}
+
+.main .synthesize .synthesize-layer {
+  width: 1180px;
+  height: 850px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-tit {
+  font-size: 32px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box {
+  position: relative;
+  text-align: center;
+  margin-top: 105px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box > img {
+  width: 534px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box > span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 85%);
+  font-size: 24px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .big-cir-box {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .big-cir-box .cir1 {
+  position: absolute;
+  left: 345px;
+  top: 33px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: url(../images/wissecurity/juese.png) no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .big-cir-box .cir2 {
+  position: absolute;
+  right: 275px;
+  top: 180px;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background: url(../images/wissecurity/yonghu.png) no-repeat;
+  background-size: cover;
+  padding-top: 73px;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .big-cir-box .cir3 {
+  position: absolute;
+  right: 370px;
+  bottom: -11px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url(../images/wissecurity/jiancha.png) no-repeat;
+  background-size: cover;
+  padding-top: 96px;
+  font-size: 20px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .big-cir-box .cir4 {
+  position: absolute;
+  left: 260px;
+  bottom: 84px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: url(../images/wissecurity/shuju.png) no-repeat;
+  background-size: cover;
+  padding-top: 96px;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #DE3629;
+  background-color: #FFEBE9;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item.l {
+  border-radius: 20px 20px 5px 20px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item.r {
+  border-radius: 20px 20px 20px 5px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(1) {
+  left: 250px;
+  top: -25px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(2) {
+  left: 122px;
+  top: 134px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(3) {
+  left: 86px;
+  top: 225px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(4) {
+  left: 227px;
+  top: 450px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(5) {
+  right: 147px;
+  top: 354px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(6) {
+  right: 94px;
+  top: 124px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(7) {
+  right: 167px;
+  top: 48px;
+}
+
+.main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(8) {
+  right: 258px;
+  top: -25px;
 }
 
 .advisory {

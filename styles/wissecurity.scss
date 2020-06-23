@@ -1,30 +1,31 @@
-@media screen and(min-width: 0)  {
+@media screen and(min-width: 0) {
     .banner {
         height: 460px;
         padding-top: 0px;
     }
 }
 
-@media screen and(min-width: 1180px)  {
+@media screen and(min-width: 1180px) {
     .banner {
         height: 550px;
         padding-top: 52px;
     }
 }
 
-@media screen and(min-width: 1280px)  {
+@media screen and(min-width: 1280px) {
     .banner {
         height: 660px;
         padding-top: 75px;
     }
 }
 
-@media screen and (min-width: 1365px)  {
+@media screen and (min-width: 1365px) {
     .banner {
         height: 750px;
         padding-top: 120px;
     }
 }
+
 .banner {
     max-width: 1920px;
     margin: 0 auto;
@@ -78,402 +79,344 @@
 
         .security-centre-tit {
             text-align: center;
-            padding-top: 100px;
+            padding-top: 80px;
             font-size: 32px;
             letter-spacing: 2px;
         }
 
-        .security-centre-image-text {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 100px;
-            margin-bottom: 75px;
+        .security-centre-items {
+            margin-top: 70px;
+            margin-bottom: 60px;
+            overflow: hidden;
 
-            .security-centre-image,
-            .security-centre-text {
-                flex: 1;
-            }
+            .security-centre-item {
+                width: 520px;
+                overflow: hidden;
+                display: flex;
+                margin-bottom: 70px;
 
-            img {
-                width: 580px;
-            }
+                .l {
+                    width: 120px;
+                    margin-right: 40px;
 
-            p {
-                font-size: 16px;
-                color: #666666;
-                line-height: 28px;
-                letter-spacing: 1px;
-                margin-bottom: 30px;
+                    img {
+                        width: 100%;
+                    }
+                }
 
-                em {
-                    font-style: normal;
-                    color: #F84335;
-                    font-weight: 700;
+                .r {
+                    flex: 1;
+
+                    .r-tit {
+                        color: #333333;
+                        font-size: 22px;
+                        font-family: MicrosoftYaHei;
+                        letter-spacing: 1px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-family: MicrosoftYaHei;
+                        color: #666666;
+                        line-height: 28px;
+                    }
+                }
+
+                &.left {
+                    float: left;
+                }
+
+                &.right {
+                    float: right;
                 }
             }
         }
     }
 
     .trait {
+        position: relative;
         max-width: 1920px;
-        background: url(../images/wissecurity/bg_anbao_tedian.png) no-repeat;
+        height: 900px;
+        background: url(../images/wissecurity/anbao_bg1.png) no-repeat;
         background-size: cover;
         margin: 0 auto;
 
-        .trait-layer {
-            width: 1180px;
-            padding-top: 100px;
-            height: 500px;
-            margin: 0 auto;
-            color: #fff;
+        .trait-white-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .8);
+        }
 
-            .trait-tit {
-                font-size: 32px;
-                letter-spacing: 2px;
-                text-align: center;
+        .trait-layer {
+            position: relative;
+            width: 1180px;
+            height: 100%;
+            margin: 0 auto;
+
+            .center-cir {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -53%);
+                width: 470px;
+                height: 470px;
+                background: url(../images/wissecurity/kunjing.png) no-repeat;
+                background-size: cover;
+                z-index: 0;
             }
 
-            .trait-list-box {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                margin-top: 80px;
+            .tradit-item {
+                position: absolute;
+                width: 250px;
+                height: 160px;
+                border-radius: 10px;
+                text-align: center;
+                color: #fff;
+                padding: 20px;
+                box-shadow: 0px 4px 40px 0px rgba(236, 236, 237, 1);
+                z-index: 1;
 
-                .trait-list {
-                    background: url(../images/wissecurity/quan.png) no-repeat;
-                    background-size: 14px;
-                    background-position: left 4px;
-                    width: 50%;
-                    padding-left: 18px;
-                    font-size: 15px;
-                    letter-spacing: 1px;
-                    margin-bottom: 15px;
+                &:nth-of-type(1) {
+                    top: 83px;
+                    left: 465px;
+                    background: linear-gradient(360deg, rgba(135, 226, 250, 1) 0%, rgba(79, 185, 254, 1) 100%);
+                }
+
+                &:nth-of-type(2) {
+                    top: 353px;
+                    right: 150px;
+                    background: linear-gradient(360deg, rgba(135, 224, 193, 1) 0%, rgba(82, 217, 209, 1) 100%);
+                }
+
+                &:nth-of-type(3) {
+                    bottom: 117px;
+                    right: 280px;
+                    background: linear-gradient(360deg, rgba(255, 166, 181, 1) 0%, rgba(242, 141, 187, 1) 100%);
+                }
+
+                &:nth-of-type(4) {
+                    bottom: 117px;
+                    left: 280px;
+                    background: linear-gradient(360deg, rgba(161, 175, 255, 1) 0%, rgba(135, 150, 240, 1) 100%);
+                }
+
+                &:nth-of-type(5) {
+                    top: 353px;
+                    left: 150px;
+                    background: linear-gradient(360deg, rgba(255, 199, 175, 1) 0%, rgba(242, 164, 141, 1) 100%);
+                }
+
+                .item-tit {
+                    font-size: 18px;
+                    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-family: MicrosoftYaHei;
+                    line-height: 22px;
+                }
+            }
+
+            .center-cir {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    text-align: center;
+
+                    &:first-child {
+                        font-size: 28px;
+                        font-family: MicrosoftYaHei;
+                        color: #333333;
+                        letter-spacing: 2px;
+                        margin-bottom: 10px;
+                    }
+
+                    &:last-child {
+                        font-size: 14px;
+                        font-family: Helvetica;
+                        color: #aaaaaa;
+                        line-height: 17px;
+                    }
                 }
             }
         }
     }
 
-    .structure {
+    .solve {
+        width: 1180px;
+        height: 900px;
+        margin: 0 auto;
+        padding-top: 80px;
 
-        .flag {
-            position: absolute;
-            left: 0;
-            top: 20px;
-            font-size: 48px;
-            font-family: Helvetica-Bold, Helvetica;
-            font-weight: bold;
-            color: #F3F3F3;
-            line-height: 58px;
-        }
-
-        .structure-tit-box {
-            padding-top: 100px;
+        .solve-tit {
             text-align: center;
-            margin-bottom: 30px;
+            font-size: 32px;
+            font-family: MicrosoftYaHei;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
 
-            .structure-tit {
-                font-size: 32px;
-                letter-spacing: 2px;
+        .solve-scheme {
+            position: relative;
+            height: 440px;
+            margin-top: 80px;
+            background: url(../images/wissecurity/fangantu.png) no-repeat;
+            background-size: 620px 440px;
+            background-position: center top;
+
+            .solve-scheme-item {
+                position: absolute;
+                width: 260px;
+                font-size: 15px;
+                font-family: MicrosoftYaHei;
+                color: #555555;
+                line-height: 24px;
+
+                &.l {
+                    text-align: right;
+                }
+
+                &:nth-of-type(1) {
+                    left: 75px;
+                    top: 0;
+                }
+
+                &:nth-of-type(2) {
+                    right: 80px;
+                    top: 18px;
+                }
+
+                &:nth-of-type(3) {
+                    right: 0;
+                    top: 187px;
+                }
+
+                &:nth-of-type(4) {
+                    right: 80px;
+                    bottom: 12px;
+                }
+
+                &:nth-of-type(5) {
+                    left: 75px;
+                    bottom: 12px;
+                }
+
+                &:nth-of-type(6) {
+                    left: 0px;
+                    top: 187px;
+                }
             }
+        }
 
-            .structure-txt {
-                margin-top: 80px;
-                font-size: 28px;
-                font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
-                font-weight: bold;
+        .solve-arrow {
+            text-align: center;
+            margin-top: 40px;
+
+            img {
+                width: 29px;
+            }
+        }
+
+        .solve-zj {
+            font-size: 22px;
+            font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-top: 30px;
+
+            em {
+                font-style: normal;
                 color: #F84335;
-                letter-spacing: 5px;
             }
         }
+    }
 
-        .lead {
-            .lead-layer {
-                position: relative;
-                width: 1180px;
-                margin: 0 auto;
+    .alter {
 
-                .lead-name {
-                    text-align: center;
-                    font-size: 20px;
-                    letter-spacing: 1px;
-                    padding-top: 40px;
-                }
+        background-color: #F6F6F6;
 
-                .lead-cir-out {
-                    position: relative;
-                    width: 180px;
-                    height: 180px;
-                    border-radius: 50%;
-                    margin: 0 auto;
-                    border: 5px solid #FFE9EA;
-                    margin-bottom: 64px;
-                    margin-top: 40px;
+        .alter-layer {
+            width: 1180px;
+            height: 850px;
+            margin: 0 auto;
+            padding-top: 80px;
 
-                    .lead-cir-in {
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 150px;
-                        height: 150px;
-                        text-align: center;
-                        border-radius: 50%;
-                        background: #FF6F65;
-                        font-size: 26px;
-                        font-family: Helvetica-Bold, Helvetica;
-                        font-weight: bold;
-                        color: #fff;
-                        line-height: 31px;
-                        padding-top: 41px;
-                    }
-                }
-            }
-        }
-
-        .security-personnel {
-            background-color: #F5F5F5;
-
-            .personnel-layer {
-                position: relative;
-                width: 1180px;
-                margin: 0 auto;
-
-                .flag {
-                    color: #E8E8E8;
-                }
-
-                .qiqiu-box {
-                    .qiqiu {
-                        position: absolute;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-items: center;
-                        background: #FFE9EA;
-                        border-radius: 50%;
-                        color: #F84335;
-                        letter-spacing: 2px;
-                        z-index: 1;
-                    }
-
-                    .qq1 {
-                        left: 240px;
-                        top: 90px;
-                        width: 80px;
-                        height: 80px;
-                        font-size: 15px;
-                    }
-
-                    .qq2 {
-                        left: 100px;
-                        top: 170px;
-                        width: 100px;
-                        height: 100px;
-                        font-size: 18px;
-                    }
-
-                    .qq3 {
-                        left: 36px;
-                        top: 356px;
-                        width: 108px;
-                        height: 108px;
-                        font-size: 20px;
-                    }
-
-                    .qq4 {
-                        left: 186px;
-                        top: 450px;
-                        width: 80px;
-                        height: 80px;
-                        font-size: 15px;
-                    }
-
-                    .qq5 {
-                        left: 235px;
-                        top: 595px;
-                        width: 88px;
-                        height: 88px;
-                        font-size: 16px;
-                    }
-
-                    .qq6 {
-                        right: 243px;
-                        top: 123px;
-                        width: 80px;
-                        height: 80px;
-                        font-size: 15px;
-                    }
-
-                    .qq7 {
-                        right: 153px;
-                        top: 240px;
-                        width: 90px;
-                        height: 90px;
-                        font-size: 16px;
-                    }
-
-                    .qq8 {
-                        right: 105px;
-                        top: 423px;
-                        width: 80px;
-                        height: 80px;
-                        font-size: 15px;
-                    }
-
-                    .qq9 {
-                        right: 233px;
-                        top: 500px;
-                        width: 90px;
-                        height: 90px;
-                        font-size: 16px;
-                    }
-                }
-
-                .personnel-name {
-                    text-align: center;
-                    font-size: 20px;
-                    letter-spacing: 1px;
-                    padding-top: 60px;
-                }
-
-                .personnel-iosand {
-                    position: relative;
-                    left: -10px;
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 60px;
-                    z-index: 2;
-                    padding-bottom: 30px;
-
-                    img {
-                        width: 244px;
-                        height: 500px;
-                    }
-
-                    .ios {
-                        margin-right: 50px;
-                    }
-
-                    p {
-                        font-size: 15px;
-                        color: #666666;
-                        line-height: 20px;
-                        text-align: center;
-                        margin-top: 20px;
-                    }
-                }
-            }
-        }
-
-        .manager {
-            &.gray {
-                background-color: #F5F5F5;
-
-                .flag {
-                    color: #E8E8E8;
-                }
-            }
-
-            .manager-layer {
-                position: relative;
-                width: 1180px;
-                margin: 0 auto;
-
-                .manager-name {
-                    padding-top: 60px;
-                    font-size: 20px;
-                    letter-spacing: 1px;
-                    text-align: center;
-                }
-
-                .manager-img-box {
-                    display: flex;
-                    margin-top: 60px;
-                    padding-bottom: 50px;
-
-                    .left-img {
-                        flex: 1;
-
-                        img {
-                            width: 630px;
-
-                            &.anbaoweb {
-                                width: 500px;
-                            }
-                        }
-                    }
-
-                    .right-img {
-                        flex: 1;
-                        display: flex;
-                        justify-content: center;
-
-                        .ios {
-                            margin-right: 50px;
-                        }
-
-                        img {
-                            width: 690px;
-                        }
-
-                        .right-iosand {
-                            img {
-                                width: 244px;
-                                height: 500px;
-                            }
-
-                            p {
-                                font-size: 15px;
-                                color: #666666;
-                                text-align: center;
-                                margin-top: 20px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .periphery {
-            .periphery-layer {
-                position: relative;
-                width: 1180px;
-                margin: 0 auto;
+            .alter-tit {
+                font-size: 32px;
+                font-family: MicrosoftYaHei;
+                letter-spacing: 2px;
                 text-align: center;
+            }
 
-                .periphery-name {
-                    padding-top: 80px;
+            .alter-ladder {
+                position: relative;
+                height: 633px;
+                background: url(../images/wissecurity/dajiantou.png) no-repeat;
+                background-size: 906px 573px;
+                background-position: 240px bottom;
+
+                .alter-ladder-item {
+                    position: absolute;
+                    line-height: 46px;
                     font-size: 20px;
+                    font-family: MicrosoftYaHei;
                     letter-spacing: 1px;
-                }
 
-                .periphery-items {
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 55px;
-                    margin-bottom: 84px;
+                    .num {
+                        display: inline-block;
+                        width: 46px;
+                        height: 46px;
+                        text-align: center;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        margin-left: 50px;
+                        font-size: 24px;
+                        font-family: DINAlternate-Bold, DINAlternate;
+                        font-weight: bold;
+                        color: #F84335;
+                    }
 
-                    .periphery-item {
-                        margin: 0 25px;
+                    em {
+                        font-style: normal;
+                        color: #F84335;
+                    }
 
-                        img {
-                            width: 80px;
-                        }
-
-                        p {
-                            font-size: 15px;
-                            letter-spacing: 1px;
-                            margin-top: 10px;
-                        }
+                    &:nth-of-type(1){
+                        left: 28px;
+                        bottom: 98px;
+                    }
+                    &:nth-of-type(2){
+                        left: 90px;
+                        bottom: 194px;
+                    }
+                    &:nth-of-type(3){
+                        left: 294px;
+                        bottom: 287px;
+                    }
+                    &:nth-of-type(4){
+                        left: 450px;
+                        bottom: 348px;
+                    }
+                    &:nth-of-type(5){
+                        left: 605px;
+                        bottom: 425px;
                     }
                 }
             }
+
         }
     }
 
     .capacity {
-        background-color: #F5F5F5;
-
         .capacity-layer {
             width: 1180px;
             margin: 0 auto;
@@ -482,7 +425,10 @@
                 font-size: 32px;
                 text-align: center;
                 letter-spacing: 2px;
-                padding-top: 100px;
+                padding-top: 80px;
+                background: url(../images/wissecurity/yuandian.png) no-repeat;
+                background-size: 99px 73px;
+                background-position: 422px 65px;
             }
 
             .capacity-module {
@@ -492,35 +438,224 @@
 
                 .module-item {
                     float: left;
-                    width: 270px;
-                    height: 350px;
+                    width: 265px;
+                    height: 260px;
                     background: #fff;
-                    box-shadow: 0px 5px 50px 0px #ECECED;
+                    box-shadow: 0px 4px 40px 0px rgba(236, 236, 237, 1);
                     border-radius: 10px;
                     margin-bottom: 40px;
                     margin-right: 32px;
+                    text-align: center;
+
+                    img {
+                        width: 100px;
+                    }
 
                     &:nth-of-type(4n+4) {
                         margin-right: 0;
                     }
 
                     .item-name {
-                        text-align: center;
-                        font-size: 16px;
-                        letter-spacing: 1px;
-                        margin-top: 5px;
+                        position: relative;
+                        font-size: 18px;
+                        font-family: MicrosoftYaHei;
+                        line-height: 24px;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 20px;
+                            height: 5px;
+                            background: #F84335;
+                            border-radius: 2px;
+                            bottom: -15px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
                     }
 
                     .item-text {
-                        margin-top: 10px;
-                        font-size: 13px;
+                        margin-top: 30px;
+                        font-size: 14px;
                         color: #888888;
-                        line-height: 22px;
+                        line-height: 24px;
                         padding: 0 30px;
                     }
+                }
+            }
+        }
+    }
 
-                    img {
-                        width: 100%;
+    .synthesize {
+        background-color: #F6F6F6;
+
+        .synthesize-layer {
+            width: 1180px;
+            height: 850px;
+            margin: 0 auto;
+            padding-top: 80px;
+
+            .synthesize-tit {
+                font-size: 32px;
+                font-family: MicrosoftYaHei;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+
+            .synthesize-img-box {
+                position: relative;
+                text-align: center;
+                margin-top: 105px;
+
+                &>img {
+                    width: 534px;
+                }
+
+                &>span {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, 85%);
+                    font-size: 24px;
+                    font-family: MicrosoftYaHei;
+                    letter-spacing: 1px;
+                }
+
+                .big-cir-box {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+
+                    .cir1 {
+                        position: absolute;
+                        left: 345px;
+                        top: 33px;
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 50%;
+                        background: url(../images/wissecurity/juese.png) no-repeat;
+                        background-size: cover;
+                        padding-top: 80px;
+                        font-size: 18px;
+                        font-family: MicrosoftYaHei;
+                        letter-spacing: 1px;
+                    }
+
+                    .cir2 {
+                        position: absolute;
+                        right: 275px;
+                        top: 180px;
+                        width: 126px;
+                        height: 126px;
+                        border-radius: 50%;
+                        background: url(../images/wissecurity/yonghu.png) no-repeat;
+                        background-size: cover;
+                        padding-top: 73px;
+                        font-size: 18px;
+                        font-family: MicrosoftYaHei;
+                        letter-spacing: 1px;
+                    }
+
+                    .cir3 {
+                        position: absolute;
+                        right: 370px;
+                        bottom: -11px;
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        background: url(../images/wissecurity/jiancha.png) no-repeat;
+                        background-size: cover;
+                        padding-top: 96px;
+                        font-size: 20px;
+                        font-family: MicrosoftYaHei;
+                        letter-spacing: 1px;
+                    }
+
+                    .cir4 {
+                        position: absolute;
+                        left: 260px;
+                        bottom: 84px;
+                        width: 160px;
+                        height: 160px;
+                        border-radius: 50%;
+                        background: url(../images/wissecurity/shuju.png) no-repeat;
+                        background-size: cover;
+                        padding-top: 96px;
+                        font-size: 18px;
+                        font-family: MicrosoftYaHei;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .bubble-box {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    .bubble-item {
+                        position: absolute;
+                        width: 150px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-size: 20px;
+                        font-family: PingFangSC-Medium, PingFang SC;
+                        font-weight: 500;
+                        color: #DE3629;
+                        background-color: #FFEBE9;
+
+                        &.l {
+                            border-radius: 20px 20px 5px 20px;
+                        }
+
+                        &.r {
+                            border-radius: 20px 20px 20px 5px;
+                        }
+
+                        &:nth-of-type(1) {
+                            left: 250px;
+                            top: -25px;
+                        }
+
+                        &:nth-of-type(2) {
+                            left: 122px;
+                            top: 134px;
+                        }
+
+                        &:nth-of-type(3) {
+                            left: 86px;
+                            top: 225px;
+                        }
+
+                        &:nth-of-type(4) {
+                            left: 227px;
+                            top: 450px;
+                        }
+
+                        &:nth-of-type(5) {
+                            right: 147px;
+                            top: 354px;
+                        }
+
+                        &:nth-of-type(6) {
+                            right: 94px;
+                            top: 124px;
+                        }
+
+                        &:nth-of-type(7) {
+                            right: 167px;
+                            top: 48px;
+                        }
+
+                        &:nth-of-type(8) {
+                            right: 258px;
+                            top: -25px;
+                        }
                     }
                 }
             }
@@ -529,7 +664,7 @@
 }
 
 .advisory {
-    background:linear-gradient(270deg,#F84335 0%,#FF674C 100%);
+    background: linear-gradient(270deg, #F84335 0%, #FF674C 100%);
 
     .advisory-layer {
         max-width: 1920px;
