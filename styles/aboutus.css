@@ -1,11 +1,22 @@
 .banner {
   max-width: 1920px;
   margin: 0 auto;
-  height: 200px;
-  background: url(../images/common/banner_anli.png) no-repeat;
-  background-size: cover;
+  height: 300px;
+  line-height: 300px;
+  font-size: 44px;
   text-align: center;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  letter-spacing: 5px;
+  background: url(../images/aboutus/banner_about.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
   color: #ffffff;
+}
+
+.gsdsj-bg {
+  background: url(../images/aboutus/lichen_bg.jpg) no-repeat;
+  background-position: center bottom;
 }
 
 .mian {
@@ -140,7 +151,7 @@
 }
 
 .mian .main-content .content.gsdsj {
-  padding-bottom: 50px;
+  margin-bottom: 245px;
 }
 
 .mian .main-content .content.gsdsj .slogan {
@@ -160,12 +171,13 @@
   content: '';
   display: block;
   position: absolute;
-  top: 45px;
+  top: 60px;
   left: 50%;
   width: 2px;
   height: 100%;
   transform: translateX(-50%);
-  background-color: #377DC9;
+  background-color: rgba(55, 125, 201, 0.5);
+  z-index: 1;
 }
 
 .mian .main-content .content.gsdsj .deep-items .star {
@@ -185,27 +197,29 @@
 .mian .main-content .content.gsdsj .deep-items .deed-item::before {
   content: '';
   display: block;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(55, 125, 201, 0.3);
+  width: 30px;
+  height: 30px;
+  background-color: #377DC9;
   border-radius: 50%;
   position: absolute;
-  top: 0;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .mian .main-content .content.gsdsj .deep-items .deed-item::after {
   content: '';
   display: block;
-  width: 12px;
-  height: 12px;
-  background-color: #377dc9;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 4px;
+  top: 26px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .mian .main-content .content.gsdsj .deep-items .deed-item .sj-box {
@@ -219,10 +233,26 @@
   text-align: right;
 }
 
+.mian .main-content .content.gsdsj .deep-items .deed-item .left .sj-box::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to left, #377DC9, transparent);
+}
+
 .mian .main-content .content.gsdsj .deep-items .deed-item .right .sj-box {
   float: right;
   right: 50px;
   text-align: left;
+}
+
+.mian .main-content .content.gsdsj .deep-items .deed-item .right .sj-box::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, #377DC9, transparent);
 }
 
 .mian .main-content .content.gsdsj .deep-items .deed-item img {
