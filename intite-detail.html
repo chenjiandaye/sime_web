@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="诚聘英才_南京思美软件系统有限公司">
+    <meta content="诚聘英才 java前端 java高级研发" name="keywords">
+    <#include "head-file.html" />
+
+    <link rel="stylesheet" type="text/css" href="{ms:global.host/}/{ms:global.style/}/sime/styles/pagination.css" />
+    <link rel="stylesheet" type="text/css" href="{ms:global.host/}/{ms:global.style/}/sime/styles/aboutus.min.css" />
+    <title>诚聘英才_南京思美软件系统有限公司</title>
+</head>
+
+<body>
+    <#include "head.html" />
+
+    <div class="banner">因思而变&nbsp;&nbsp;追求完美</div>
+    <div class="mian">
+        <nav>
+            <div class="nav-name">关于我们</div>
+            <ul class="list-box">
+                <li>
+                    <a href="{ms:global.url/}/165/168/index.html" class="introduction">公司简介</a>
+                </li>
+                <li>
+                    <a href="{ms:global.url/}/165/169/index.html" class="framework">组织架构</a>
+                </li>
+                <li>
+                    <a href="{ms:global.url/}/165/170/index.html" class="honor">资质荣誉</a>
+                </li>
+                <li>
+                    <a href="{ms:global.url/}/165/171/index.html" class="deed">公司大事记</a>
+                </li>
+                <li>
+                    <a href="{ms:global.url/}/165/172/index.html" class="invite on">诚聘英才</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="invite-box">
+                <div class="content-tit">
+                    <span>诚聘英才</span>
+                    <span class="tit-r">&lt; 返回列表</span>
+                </div>
+                <div class="content cpyc-detail">
+                    <div class="contnet-top">
+                        <div class="top-name"></div>
+                        <div class="top-info">
+                            <div class="add">工作地点：</div>
+                            <div class="pay">薪资待遇：</div>
+                            <div class="num">招聘人数：</div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        {ms:field.content/}
+                    </div>
+                    <div class="sq-btn">申请职位</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <#include "footer.html" />
+    <script>
+        $('.t_list').eq(4).addClass('active')
+        $('.phone-btn').on('click', function () {
+            $('.pc-new.pc-title-btn').click()
+        })
+    </script>
+</body>
+
+</html>

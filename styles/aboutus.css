@@ -14,6 +14,11 @@
   color: #ffffff;
 }
 
+.banner em {
+  font-style: normal;
+  color: #D5111F;
+}
+
 .gsdsj-bg {
   background: url(../images/aboutus/lichen_bg.jpg) no-repeat;
   background-position: center bottom;
@@ -74,6 +79,16 @@
   letter-spacing: 2px;
   border-bottom: 1px solid #dddddd;
   padding-bottom: 9px;
+}
+
+.mian .main-content .content-tit .tit-r {
+  float: right;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #444444;
+  letter-spacing: 1px;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .mian .main-content .content {
@@ -275,6 +290,18 @@
   padding-top: 30px;
 }
 
+.mian .main-content .content.cpyc .list-box > a {
+  color: #333333;
+}
+
+.mian .main-content .content.cpyc .list-box > a:hover .list {
+  box-shadow: 0px 1px 10px 1px rgba(233, 233, 233, 0.8);
+}
+
+.mian .main-content .content.cpyc .list-box > a:hover .list-name {
+  color: #377DC9;
+}
+
 .mian .main-content .content.cpyc .list-box .list {
   border: 1px solid #ddd;
   padding: 20px 30px;
@@ -329,4 +356,42 @@
   font-size: 14px;
   color: #555555;
   line-height: 22px;
+}
+
+.mian .main-content .content.cpyc-detail .contnet-top {
+  border-bottom: 1px solid #ddd;
+}
+
+.mian .main-content .content.cpyc-detail .contnet-top .top-name {
+  font-size: 24px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.mian .main-content .content.cpyc-detail .contnet-top .top-info {
+  display: flex;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.mian .main-content .content.cpyc-detail .contnet-top .top-info .add {
+  flex: 1;
+}
+
+.mian .main-content .content.cpyc-detail .contnet-top .top-info .pay {
+  flex: 1;
+  text-align: center;
+}
+
+.mian .main-content .content.cpyc-detail .contnet-top .top-info .num {
+  flex: 1;
+  text-align: right;
+}
+
+.mian .main-content .content.cpyc-detail .detail {
+  padding-top: 40px;
+  margin-bottom: 80px;
 }

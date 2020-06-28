@@ -103,6 +103,10 @@
   -webkit-box-orient: vertical;
 }
 
+.main .news-items .news-item .item-info .name:hover {
+  color: #377DC9;
+}
+
 .main .news-items .news-item .item-info .text {
   font-size: 15px;
   color: #666666;
