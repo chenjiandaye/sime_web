@@ -51,6 +51,10 @@
   letter-spacing: 1px;
 }
 
+.banner .banner-p p.mo {
+  display: none;
+}
+
 .banner .banner-icon {
   width: 426px;
   height: 75px;
@@ -159,6 +163,10 @@
   width: 1100px;
 }
 
+.main .operation .operation-white-layer .operation-layer .operation-img img.mo {
+  display: none;
+}
+
 .main .advantage {
   position: relative;
   width: 1180px;
@@ -206,6 +214,10 @@
 
 .main .advantage .circle-in .circle-out p:last-child {
   font-size: 18px;
+}
+
+.main .advantage .adv-items.mo {
+  display: none;
 }
 
 .main .advantage .adv-item {

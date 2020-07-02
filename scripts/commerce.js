@@ -1,4 +1,10 @@
 $(function () {
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        pagination: '.swiper-pagination',
+        paginationType: 'bullets',
+        paginationClickable: true
+    })
     $(".tab-btn").on("click", "li", function () {
         var index = $(this).index()
         $(this).addClass('on').siblings().removeClass('on')

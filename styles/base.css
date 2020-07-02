@@ -18,6 +18,9 @@ body {
   color: #333333;
 }
 
+.fiexd{
+  position: fixed;
+}
 /* 页头 */
 header {
   height: 80px;
@@ -607,4 +610,348 @@ header .h-layer .h_info .info_phone p:first-child {
   background: url(../images/common/gotop.png) no-repeat;
   background-size: cover;
   border-radius: 5px;
+}
+
+/* 移动端 */
+.m-header {
+  display: none;
+}
+
+.mobody {
+  width: 100%;
+  min-width: auto;
+  -webkit-overflow-scrolling : touch; 
+}
+
+.mobody header {
+  display: none;
+}
+
+/* 页脚 */
+.mobody .btnTop {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.mobody .foot,
+.foot.mo {
+  display: none;
+}
+
+.mobody .foot.mo {
+  display: block;
+  width: 100%;
+  height: 7.3rem;
+}
+
+.mobody .foot.mo .foot-c {
+  width: 100%;
+  height: 6.2rem;
+  padding-top: 0;
+  background-color: #202B39;
+  color: #ffffff;
+}
+
+.mobody .foot.mo .foot-c .foot-c-btn {
+  display: flex;
+  height: 0.8rem;
+  border-bottom: 1px solid #5A636F;
+}
+
+.mobody .foot.mo .foot-c .foot-c-btn .c-btn {
+  flex: 1;
+  text-align: center;
+  margin-top: 0.2rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-right: 1px solid #5A636F;
+}
+
+.mobody .foot.mo .foot-c .foot-c-btn .c-btn:last-child {
+  border-right: 0;
+}
+
+.mobody .foot.mo .foot-c .foot-c-btn .c-btn a {
+  color: #ffffff;
+  font-size: 0.24rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info {
+  position: relative;
+  height: 2.6rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #5A636F;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-l .l-item .l-item-tit {
+  font-family: MicrosoftYaHei;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  transform-origin: left;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-l .l-item .l-item-tit img {
+  width: 0.48rem;
+  vertical-align: middle;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-l .l-item .l-item-box {
+  margin-left: 0.58rem;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-l .l-item .l-item-box .phones p {
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-l .l-item .l-item-text {
+  font-family: MicrosoftYaHei;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  transform-origin: left;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-l .l-item .l-item-text img {
+  width: 0.48rem;
+  vertical-align: middle;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-r {
+  position: absolute;
+  top: 0.42rem;
+  right: 0rem;
+  text-align: center;
+  width: 1.7rem;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-r p {
+  font-size: 0.24rem;
+  transform: scale(0.83);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #aaaaaa;
+  margin-bottom: 0.16rem;
+}
+
+.mobody .foot.mo .foot-c .foot-c-info .foot-c-info-r img {
+  width: 100%;
+  width: 1.32rem;
+}
+
+.mobody .foot.mo .foot-c .foot-honor {
+  height: 2.06rem;
+  padding: 0.2rem 0.4rem 0;
+  border-bottom: 1px solid #5A636F;
+}
+
+.mobody .foot.mo .foot-c .foot-honor .foot-honor-tit {
+  font-size: 0.24rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+
+.mobody .foot.mo .foot-c .foot-honor .foot-honor-box {
+  display: flex;
+  position: relative;
+}
+
+.mobody .foot.mo .foot-c .foot-honor .foot-honor-box ul {
+  position: absolute;
+  top: 0;
+  width: 5rem;
+  font-size: 0.24rem;
+  transform: scale(0.83);
+  transform-origin: left;
+}
+
+.mobody .foot.mo .foot-c .foot-honor .foot-honor-box ul:nth-of-type(1) {
+  left: 0;
+}
+
+.mobody .foot.mo .foot-c .foot-honor .foot-honor-box ul:nth-of-type(2) {
+  left: 2.6rem;
+}
+
+.mobody .foot.mo .foot-c .foot-honor .foot-honor-box ul:nth-of-type(3) {
+  left: 5.62rem;
+}
+
+.mobody .foot.mo .foot-c .foot-honor .foot-honor-box ul li {
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #aaaaaa;
+  margin-bottom: 0.04rem;
+}
+
+.mobody .foot.mo .foot-c .foot-copy {
+  text-align: center;
+  font-size: 0.24rem;
+  transform: scale(0.83);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.75rem;
+}
+
+.mobody .foot.mo .foot-btn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  height: 1.1rem;
+  background-color: #377DC9;
+  display: flex;
+  color: #ffffff;
+}
+
+.mobody .foot.mo .foot-btn .f-btn {
+  flex: 1;
+  padding-top: 0.05rem;
+  text-align: center;
+}
+
+.mobody .foot.mo .foot-btn .f-btn a {
+  color: #fff;
+}
+
+.mobody .foot.mo .foot-btn .f-btn img {
+  width: 0.6rem;
+}
+
+.mobody .foot.mo .foot-btn .f-btn p {
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+
+.mobody .pop-up.mo .pop-box {
+  width: 95%;
+  height: auto;
+}
+
+.mobody .pop-up.mo .pop-box .pop-top {
+  height: auto;
+  padding-top: 0.4rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-top .pop-tit {
+  font-size: 0.35rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-top .pop-ts {
+  font-size: 0.28rem;
+  margin-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-top .closeBtb {
+  top: 0.1rem;
+  right: 0.1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-top > img {
+  left: 0.1rem;
+  top: 0.2rem;
+  width: 1rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot {
+  padding: 0.1rem 0.3rem 0;
+  font-size: 0.26rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line {
+  margin-top: 0.3rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line:first-child .text {
+  display: flex;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line:first-child .text .rel {
+  flex: 1;
+  margin-top: 0.1rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line:first-child .text .rel label {
+  width: 0.28rem;
+  height: 0.28rem;
+  left: -0.03rem;
+  top: 0.07rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line:first-child .text .rel label::after {
+  left: 0.08rem;
+  top: 0.08rem;
+  width: 0.08rem;
+  height: 0.08rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line:first-child .text .rel input[type='radio'] {
+  width: 0.25rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line .name {
+  width: 1.6rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line .text .rel {
+  margin-right: 0;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line .text input[type='text'] {
+  width: calc(100% - 1.8rem);
+  height: 0.72rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-bot .pop-line .text textarea {
+  width: calc(100% - 1.8rem);
+  height: 2.4rem;
+}
+
+.mobody .pop-up.mo .pop-box .pop-btn {
+  position: relative;
+  bottom: 0;
+  width: 2rem;
+  height: 0.8rem;
+  margin: 0.1rem 0;
+  font-size: 0.32rem;
+}
+
+.mobody .dialog.mo,
+.mobody .dialog-ts.mo {
+  font-size: 0.28rem;
+}
+
+.mobody .dialog.mo .dialog-box,
+.mobody .dialog-ts.mo .dialog-box {
+  width: 6rem;
+  height: auto;
+}
+
+.mobody .dialog.mo .dialog-box .dialog-t,
+.mobody .dialog-ts.mo .dialog-box .dialog-t {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.36rem;
+}
+
+.mobody .dialog.mo .dialog-box .dialog-c,
+.mobody .dialog-ts.mo .dialog-box .dialog-c {
+  padding: 0.2rem;
+}
+
+.mobody .dialog.mo .dialog-box .dialog-f button,
+.mobody .dialog-ts.mo .dialog-box .dialog-f button {
+  margin: 0.2rem 0;
+  width: 2rem;
+  height: 0.6rem;
 }

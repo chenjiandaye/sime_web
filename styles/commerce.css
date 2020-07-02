@@ -139,6 +139,10 @@
   text-align: left;
 }
 
+.main .ds-type .ds-item-box .ds-item .ds-item-txt .wz.mo {
+  display: none;
+}
+
 .main .ds-type .ds-item-box .ds-item .ds-item-txt .konw-more {
   position: absolute;
   bottom: 20px;
@@ -179,6 +183,10 @@
   color: #888888;
   line-height: 30px;
   letter-spacing: 1px;
+}
+
+.main .channel .channel-layer .channel-top p.mo {
+  display: none;
 }
 
 .main .channel .channel-layer .channel-item-box {
@@ -370,6 +378,10 @@
   top: 372px;
 }
 
+.main .wending .wending-layer .wending-mid .mo-text-box {
+  display: none;
+}
+
 .main .preponderance {
   width: 1180px;
   margin: 0 auto;
@@ -431,6 +443,10 @@
   color: #999999;
   line-height: 22px;
   letter-spacing: 1px;
+}
+
+.main .preponderance .prep-item-box .prep-item .prep-item-txt .wz.mo {
+  display: none;
 }
 
 .main .case {
@@ -559,6 +575,10 @@
   display: block;
   margin: 0 auto;
   width: 30px;
+}
+
+.main .case .case-tab .case-swiper-box {
+  display: none;
 }
 
 .advisory {

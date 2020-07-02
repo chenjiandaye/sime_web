@@ -148,6 +148,10 @@
   border-bottom: 1px solid #dddddd;
 }
 
+.main .content-top .mo-top-items {
+  display: none;
+}
+
 .main .content-top .top-text {
   max-width: 1180px;
   line-height: 50px;
@@ -385,12 +389,20 @@
   line-height: 30px;
 }
 
+.main .our-services .mo-p {
+  display: none;
+}
+
 .main .our-services .ser-bot {
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 100px auto 0;
+}
+
+.main .our-services .ser-bot.mo {
+  display: none;
 }
 
 .main .our-services .ser-bot .ser-item {
@@ -522,6 +534,10 @@
   letter-spacing: 1px;
 }
 
+.main .advantage .adv-top p.mo-p {
+  display: none;
+}
+
 .main .advantage .adv-box-tit {
   text-align: center;
   font-size: 24px;
@@ -596,9 +612,17 @@
   letter-spacing: 3px;
 }
 
+.main .dynamic .dyn-layer .dyn-top .more {
+  display: none;
+}
+
 .main .dynamic .dyn-layer .dyn-item-box {
   display: flex;
   justify-content: space-between;
+}
+
+.main .dynamic .dyn-layer .dyn-item-box.mo {
+  display: none;
 }
 
 .main .dynamic .dyn-layer .dyn-item-box .dyn-item {

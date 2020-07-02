@@ -47,6 +47,9 @@
             font-size: 18px;
             line-height: 32px;
             letter-spacing: 1px;
+            &.mo{
+                display: none;
+            }
         }
     }
 
@@ -165,6 +168,9 @@
 
                     img {
                         width: 1100px;
+                        &.mo{
+                            display: none;
+                        }
                     }
                 }
             }

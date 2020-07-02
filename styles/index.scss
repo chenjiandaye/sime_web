@@ -162,6 +162,10 @@
         height: 50px;
         border-bottom: 1px solid #dddddd;
 
+        .mo-top-items {
+            display: none;
+        }
+
         .top-text {
             max-width: 1180px;
             line-height: 50px;
@@ -403,12 +407,19 @@
             line-height: 30px;
         }
 
+        .mo-p {
+            display: none;
+        }
+
         .ser-bot {
             position: relative;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             margin: 100px auto 0;
+            &.mo{
+                display: none;
+            }
 
             .ser-item {
                 text-align: center;
@@ -537,6 +548,9 @@
                 color: #888888;
                 line-height: 30px;
                 letter-spacing: 1px;
+                &.mo-p{
+                    display: none;
+                }
             }
         }
 
@@ -611,11 +625,19 @@
                     font-size: 36px;
                     letter-spacing: 3px;
                 }
+
+                .more {
+                    display: none;
+                }
             }
 
             .dyn-item-box {
                 display: flex;
                 justify-content: space-between;
+
+                &.mo {
+                    display: none;
+                }
 
                 .dyn-item {
                     width: 360px;

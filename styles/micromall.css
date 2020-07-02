@@ -51,6 +51,10 @@
   letter-spacing: 1px;
 }
 
+.banner .banner-p p.mo {
+  display: none;
+}
+
 .banner .banner-icon {
   width: 426px;
   height: 75px;
@@ -158,6 +162,10 @@
   width: 894px;
 }
 
+.main .operation .operation-white-layer .operation-layer img.mo {
+  display: none;
+}
+
 .main .system {
   width: 1180px;
   margin: 0 auto;
@@ -209,6 +217,10 @@
   color: #999999;
   line-height: 24px;
   letter-spacing: 1px;
+}
+
+.main .system .swiper-system-items {
+  display: none;
 }
 
 .main .utility {

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/commerce.min.css">
+    <link rel="stylesheet" href="./styles/swiper-3.4.2.min.css">
+    <script src="./scripts/jQuery.js"></script>
+    <script src="./scripts/m_commerce.js"></script>
+
     <title>产品与方案-思美电商</title>
 </head>
 
@@ -72,13 +76,14 @@
     </div>
     <div class="main">
         <div class="ds-type">
-            <div class="type-tit">高品质软件定制流程</div>
+            <div class="type-tit">电商产品类型</div>
             <div class="ds-item-box">
                 <div class="ds-item">
                     <img src="./images/commerce/icon_commerce_b2c1.png" alt="">
                     <div class="ds-item-txt">
                         <div class="tit">B2C品牌商城</div>
                         <div class="wz">快速搭建属于自己的多终端在线零售官方商城，为品牌商或者零售商提供各种运营套路和流量工具</div>
+                        <div class="wz mo">快速搭建属于自己的多终端在线零售官方商城</div>
                         <div class="konw-more">了解更多 &gt;</div>
                     </div>
                 </div>
@@ -87,6 +92,7 @@
                     <div class="ds-item-txt">
                         <div class="tit">B2B2C多用户商城</div>
                         <div class="wz">满足中大型企业搭建类京东模式的多商户共存的零售平台，整合多商家入驻平台开店，同时支持自营和O2O。</div>
+                        <div class="wz mo">满足中大型企业搭建类京东模式的多商户共存零售平台</div>
                         <div class="konw-more">了解更多 &gt;</div>
                     </div>
                 </div>
@@ -95,6 +101,7 @@
                     <div class="ds-item-txt">
                         <div class="tit">B2B批发/分销商城</div>
                         <div class="wz">为供应商搭建B2B电商平台，经销商在线采购、沟通，有效管理经销商，提高采购分销管理效率和服务水平。</div>
+                        <div class="wz mo">为供应商搭建S2B2C电商平台，经销商在线采购、沟通</div>
                         <div class="konw-more">了解更多 &gt;</div>
                     </div>
                 </div>
@@ -103,6 +110,7 @@
                     <div class="ds-item-txt">
                         <div class="tit">移动微商城</div>
                         <div class="wz">会员制分销，快速传播，拉新引流。APP+小程序+微商城，轻松实现获客+裂变+复购。</div>
+                        <div class="wz mo">会员制分销，快速传播，拉新引流</div>
                         <div class="konw-more">了解更多 &gt;</div>
                     </div>
                 </div>
@@ -115,6 +123,8 @@
                     <p>小程序商城、微信商城、App商城、PC商城、iPad端、商家移动后台、PC后台、ERP、一站式服务，全面实现互联网+
                         <br>
                         凡所应有，无所不有</p>
+                    <p class="mo">一站式服务，全面实现互联网+</p>
+                    <p class="mo">凡所应有，无所不有</p>
                 </div>
                 <div class="channel-item-box">
                     <div class="channel-item shang">
@@ -220,7 +230,7 @@
                     <div class="item-tit">邀请返利</div>
                     <div class="item-txt">邀请好友购买返利扩大推广积极性</div>
                 </div>
-                <div class="promotion-item">
+                <div class="promotion-item nomo">
                     <img src="./images/commerce/icon/icon_product_quanminpintuan14.png" alt="">
                     <div class="item-tit">周期购</div>
                     <div class="item-txt">一次购买，多次发货</div>
@@ -234,10 +244,6 @@
                     <img src="./images/commerce/icon/icon_product_quanminpintuan16.png" alt="">
                     <div class="item-tit">满减</div>
                     <div class="item-txt">提高订单产品数量</div>
-                </div>
-                <div class="promotion-item">
-                    <img src="./images/commerce/icon/icon_product_quanminpintuan_more.png" alt="">
-                    <div class="item-tit">更多</div>
                 </div>
             </div>
         </div>
@@ -265,6 +271,24 @@
                     <div class="text-box-center">
                         <img src="./images/commerce/dianshang_center.png" alt="">
                     </div>
+                    <div class="mo-text-box">
+                        <img src="./images/commerce/mo_dianshang1.png" alt="">
+                    </div>
+                    <div class="mo-text-box">
+                        <img src="./images/commerce/mo_dianshang2.png" alt="">
+                    </div>
+                    <div class="mo-text-box">
+                        <img src="./images/commerce/mo_dianshang3.png" alt="">
+                    </div>
+                    <div class="mo-text-box">
+                        <img src="./images/commerce/mo_dianshang4.png" alt="">
+                    </div>
+                    <div class="mo-text-box">
+                        <img src="./images/commerce/mo_dianshang5.png" alt="">
+                    </div>
+                    <div class="mo-text-box">
+                        <img src="./images/commerce/mo_dianshang6.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,6 +300,7 @@
                     <div class="prep-item-txt">
                         <div class="tit">产品优势</div>
                         <div class="wz">专注新零售、新分销电商系统，满足零售商、分销商各种业务发展需要，满足用户各种终端使用需要。</div>
+                        <div class="wz mo">专注新零售、新分销电商系统，满足零售商、分销商各种业务和终端使用需要。</div>
                     </div>
                 </div>
                 <div class="prep-item">
@@ -283,6 +308,7 @@
                     <div class="prep-item-txt">
                         <div class="tit">方案优势</div>
                         <div class="wz">随需而变，针对客户个性化要求量身打造专属解决方案，应对不同业务功能需要。</div>
+                        <div class="wz mo">随需而变，针对客户个性化要求量身打造专属解决方案，应对不同业务功能需要。</div>
                     </div>
                 </div>
                 <div class="prep-item">
@@ -290,6 +316,7 @@
                     <div class="prep-item-txt">
                         <div class="tit">技术优势</div>
                         <div class="wz">全java布局，稳定安全，可靠性高。开源框架，源码开元无封装。</div>
+                        <div class="wz mo">全java布局，稳定安全，可靠性高。开源框架，源码开元无封装。</div>
                     </div>
                 </div>
                 <div class="prep-item">
@@ -297,6 +324,7 @@
                     <div class="prep-item-txt">
                         <div class="tit">服务优势</div>
                         <div class="wz">资深产品经理全程1对1服务，全面细致的产品使用培训。</div>
+                        <div class="wz mo">资深产品经理全程1对1服务，全面细致的产品使用培训。</div>
                     </div>
                 </div>
             </div>
@@ -317,7 +345,8 @@
                                 </div>
                                 <div class="wzjs">
                                     <div class="item-tit">康缘美购微平台</div>
-                                    <div class="item-txt">当健康中国上升为国家战略，大健康时代全面开启。康缘集团紧跟分享经济风口，打造了大健康事业新格局的大养生价值共享平台。</div>
+                                    <div class="item-txt">当健康中国上升为国家战略，大健康时代全面开启。康缘集团紧跟分享经济风口，打造了大健康事业新格局的大养生价值共享平台。
+                                    </div>
                                     <div class="ms-box">
                                         <span>电商模式：</span>
                                         <div class="ms">
@@ -337,7 +366,8 @@
                                 </div>
                                 <div class="wzjs">
                                     <div class="item-tit">欣睿购</div>
-                                    <div class="item-txt">企业内购专属福利网站，与诸多大企业进行合作，为企业员工提供优质商品的同时，为他们推出专属的优惠福利，独享低价折扣。</div>
+                                    <div class="item-txt">企业内购专属福利网站，与诸多大企业进行合作，为企业员工提供优质商品的同时，为他们推出专属的优惠福利，独享低价折扣。
+                                    </div>
                                     <div class="ms-box">
                                         <span>电商模式：</span>
                                         <div class="ms">
@@ -351,6 +381,55 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="case-swiper-box">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="./images/commerce/pic_kaiyuan.png" alt="">
+                                    </div>
+                                    <div class="wzjs">
+                                        <div class="item-tit">康缘美购微平台</div>
+                                        <div class="item-txt">当健康中国上升为国家战略，大健康时代全面开启。康缘集团紧跟分享经济风口，打造了大健康事业新格局的大养生价值共享平台。
+                                        </div>
+                                        <div class="ms-box">
+                                            <span>电商模式：</span>
+                                            <div class="ms">
+                                                <img src="./images/commerce/icon/icon_product_ms1.png" alt="">
+                                                <p>PC端</p>
+                                            </div>
+                                            <div class="ms">
+                                                <img src="./images/commerce/icon/icon_product_ms2.png" alt="">
+                                                <p>微信端</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="./images/commerce/xinruigou.png" alt="">
+                                    </div>
+                                    <div class="wzjs">
+                                        <div class="item-tit">欣睿购</div>
+                                        <div class="item-txt">企业内购专属福利网站，与诸多大企业进行合作，为企业员工提供优质商品的同时，为他们推出专属的优惠福利，独享低价折扣。
+                                        </div>
+                                        <div class="ms-box">
+                                            <span>电商模式：</span>
+                                            <div class="ms">
+                                                <img src="./images/commerce/icon/icon_product_ms2.png" alt="">
+                                                <p>PC端</p>
+                                            </div>
+                                            <div class="ms">
+                                                <img src="./images/commerce/icon/icon_product_ms3.png" alt="">
+                                                <p>APP端</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -468,6 +547,7 @@
         </div>
     </footer>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="./scripts/swiper-3.4.2.jquery.min.js"></script>
     <script src="./scripts/commerce.js"></script>
 </body>
 

@@ -1,4 +1,58 @@
 $(function () {
+    function resizeFontSize() {
+        //获取根元素
+        const docEl = document.documentElement;
+        //获取设备宽度
+        const {
+            clientWidth
+        } = docEl;
+        //若未获取到设备宽度，则终止函数执行
+        if (!clientWidth) return;
+        //计算rem基础配置：设计图以750px为准时，px rem比例为1：100
+        const fs = 100 * (clientWidth / 750);
+        //为根元素字体赋值
+        docEl.style.fontSize = `${fs}px`;
+    }
+    //动态加载一个js/css文件
+
+    function loadjscssfile(filename, filetype) {
+        if (filetype == "js") {
+            var fileref = document.createElement('script')
+            fileref.setAttribute("type", "text/javascript")
+            fileref.setAttribute("src", filename)
+        } else if (filetype == "css") {
+            var fileref = document.createElement("link")
+            fileref.setAttribute("rel", "stylesheet")
+            fileref.setAttribute("type", "text/css")
+            fileref.setAttribute("href", filename)
+        }
+        if (typeof fileref != "undefined") {
+            document.getElementsByTagName("head")[0].appendChild(fileref)
+        }
+    }
+
+    function removejscssfile(filename, filetype) {
+        var targetelement = (filetype == "js") ? "script" : (filetype == "css") ? "link" : "none"
+        var targetattr = (filetype == "js") ? "src" : (filetype == "css") ? "href" : "none"
+        var allsuspects = document.getElementsByTagName(targetelement)
+        for (var i = allsuspects.length; i >= 0; i--) {
+            if (allsuspects[i] && allsuspects[i].getAttribute(targetattr) != null && allsuspects[i].getAttribute(
+                    targetattr).indexOf(filename) != -1)
+                allsuspects[i].parentNode.removeChild(allsuspects[i])
+        }
+    }
+    if ((navigator.userAgent.match(
+            /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+            ))) { //手机
+        resizeFontSize()
+        $('body').addClass('mo')
+        loadjscssfile('./styles/m_index.min.css', 'css')
+    } else { //电脑
+        $('body').removeClass('mo')
+        removejscssfile('./styles/m_index.min.css', 'css')
+    }
+
+    
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         pagination: '.swiper-pagination',
@@ -11,7 +65,8 @@ $(function () {
             for (var i = 0; i < total; i++) {
                 //判断哪个分页器此刻应该被激活
                 if (i == (current - 1)) {
-                    customPaginationHtml += '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
+                    customPaginationHtml +=
+                        '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
                 } else {
                     customPaginationHtml += '<span class="swiper-pagination-customs"></span>';
                 }
@@ -21,7 +76,6 @@ $(function () {
         prevButton: '.swiper-button-prev',
         nextButton: '.swiper-button-next',
     })
-
     function popChange(id) {
         $('body').css('height', '100%').css('overflow', 'hidden')
         $(id).prop('checked', true)
@@ -71,63 +125,27 @@ $(function () {
     docWidthChange()
 
     var btnTop = $('.btnTop')
-    var timer = null
 
     window.onscroll = function () {
         scrollChange()
     }
 
     function scrollChange() {
-        var backTop = getScrollTop();
+        var backTop = $(window).scrollTop();
         if (backTop >= 750) { //当前视口顶端大于等于20时，显示返回顶部的按钮
-            btnTop.css('display', 'block')
+            btnTop.fadeIn();
         } else {
-            btnTop.css('display', 'none')
+            btnTop.fadeOut()
         }
 
     }
     scrollChange()
 
-    var f = 1
-    var backTop = null
     btnTop.on('click', function () {
-        //定时执行
-        f === 1 && (backTop = getScrollTop() / 5)
-        timer = setInterval(function () {
-            f++
-            var scrollTop = getScrollTop()
-            var speedTop = scrollTop - backTop
-            //修改当前视口的数值，产生向上活动的效果
-            setScrollTop(speedTop)
-            if (scrollTop == 0) {
-                //结束函数执行
-                clearInterval(timer)
-            }
-        }, 20)
+        $("html,body").animate({
+            scrollTop: 0
+        }, 100);
+        return false
     })
-    //获取当前视口的顶端数值
-    function getScrollTop() {
-        var sTop;
-        if (document.compatMode == "BackCompat") {
-            sTop = document.body.scrollTop
-        } else {
-            //document.compatMode == \"CSS1Compat\"
-            sTop = document.documentElement.scrollTop == 0 ? document.body.scrollTop : document.documentElement.scrollTop
-        }
-        return sTop
-    }
-    //设置当前视口的顶端数值
-    function setScrollTop(top) {
-
-        if (document.compatMode == "BackCompat") {
-            document.body.scrollTop = top
-        } else {
-            if (document.documentElement.scrollTop == 0) {
-                document.body.scrollTop = top
-            } else {
-                document.documentElement.scrollTop = top
-            }
-        }
-    }
 
 })

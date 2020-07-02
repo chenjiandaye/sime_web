@@ -47,6 +47,9 @@
             font-size: 18px;
             line-height: 32px;
             letter-spacing: 1px;
+            &.mo{
+                display: none;
+            }
         }
     }
 
@@ -156,6 +159,10 @@
                     position: relative;
                     left: -42px;
                     width: 894px;
+
+                    &.mo {
+                        display: none;
+                    }
                 }
             }
         }
@@ -189,18 +196,15 @@
             .system-item {
                 width: 246px;
 
-                .img-box{
+                .img-box {
                     box-shadow: 0 0 16px 1px #d0d0d0;
                     border-radius: 30px;
                     overflow: hidden;
+
                     img {
                         width: 100%;
                     }
                 }
-                
-
-                
-
                 .name {
                     font-size: 18px;
                     margin: 20px 0 10px;
@@ -213,6 +217,9 @@
                     letter-spacing: 1px;
                 }
             }
+        }
+        .swiper-system-items {
+            display: none;
         }
     }
 

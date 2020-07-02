@@ -1,0 +1,501 @@
+@charset "UTF-8";
+.mobody .banner {
+  width: 100%;
+  height: 4rem;
+  padding-top: 0.6rem;
+}
+
+.mobody .banner .banner-c {
+  width: 100%;
+  text-align: center;
+}
+
+.mobody .banner .banner-c .banner-tit {
+  font-size: 0.4rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.1rem;
+}
+
+.mobody .banner .banner-c p {
+  max-width: 6.3rem;
+  margin: 0 auto;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: white;
+  line-height: 0.32rem;
+}
+
+.mobody .banner .banner-c .banner-icon {
+  width: 4.96rem;
+  height: 0.92rem;
+  margin: 0.3rem auto;
+  background-size: contain;
+}
+
+.mobody .banner .banner-c .banner-btn {
+  display: none;
+}
+
+.mobody .main .ds-type {
+  width: 100%;
+  margin-bottom: 0.1rem;
+}
+
+.mobody .main .ds-type .type-tit {
+  height: 1.2rem;
+  padding-top: 0.4rem;
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+}
+
+.mobody .main .ds-type .ds-item-box {
+  flex-wrap: wrap;
+  padding: 0 0.3rem;
+  margin-bottom: 0.1rem;
+}
+
+.mobody .main .ds-type .ds-item-box .ds-item {
+  width: 3.3rem;
+  height: 3.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.mobody .main .ds-type .ds-item-box .ds-item .ds-item-txt {
+  margin-top: -0.3rem;
+  padding: 0 0.05rem;
+}
+
+.mobody .main .ds-type .ds-item-box .ds-item .ds-item-txt .tit {
+  font-size: 0.28rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.mobody .main .ds-type .ds-item-box .ds-item .ds-item-txt .wz {
+  display: none;
+}
+
+.mobody .main .ds-type .ds-item-box .ds-item .ds-item-txt .wz.mo {
+  display: block;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #555555;
+  line-height: 0.32rem;
+}
+
+.mobody .main .ds-type .ds-item-box .ds-item .ds-item-txt .konw-more {
+  display: none;
+}
+
+.mobody .main .channel {
+  margin-top: 0;
+}
+
+.mobody .main .channel .channel-layer {
+  width: 100%;
+  padding-top: 0.4rem;
+  padding-bottom: 0.52rem;
+}
+
+.mobody .main .channel .channel-layer .channel-top {
+  height: 1.6rem;
+}
+
+.mobody .main .channel .channel-layer .channel-top .channel-top-tit {
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.mobody .main .channel .channel-layer .channel-top p {
+  display: none;
+}
+
+.mobody .main .channel .channel-layer .channel-top p.mo {
+  display: block;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #888888;
+  line-height: 16px;
+  line-height: 0.32rem;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box {
+  padding: 0 0.3rem;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box .channel-item {
+  width: 1.6rem;
+  height: 1.9rem;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box .channel-item.chang {
+  width: 3.38rem;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box .channel-item.shang {
+  margin-bottom: 0.3rem;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box .channel-item .img-box {
+  height: 1.32rem;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box .channel-item .img-box img {
+  height: 100%;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box .channel-item .img-box .center {
+  width: 0.64rem;
+  height: 0.64rem;
+}
+
+.mobody .main .channel .channel-layer .channel-item-box .channel-item p {
+  line-height: 0.58rem;
+  font-size: 0.24rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+
+.mobody .main .promotion {
+  width: 100%;
+  height: 7.2rem;
+  margin-top: 0;
+  background: url(../images/commerce/mo_bg_baibiancuxiao.png) no-repeat;
+  background-size: cover;
+}
+
+.mobody .main .promotion .promotion-top {
+  height: 1.6rem;
+  padding-top: 0.4rem;
+}
+
+.mobody .main .promotion .promotion-top .promotion-top-tit {
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.mobody .main .promotion .promotion-top p {
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #888888;
+  line-height: 0.32rem;
+}
+
+.mobody .main .promotion .promotion-item-box {
+  padding: 0 0.46rem;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.mobody .main .promotion .promotion-item-box .promotion-item {
+  width: 1.1rem;
+  height: 1.4rem;
+  margin-right: 0;
+  margin-bottom: 0.4rem;
+  font-size: 0.24rem;
+}
+
+.mobody .main .promotion .promotion-item-box .promotion-item.nomo {
+  display: none;
+}
+
+.mobody .main .promotion .promotion-item-box .promotion-item img {
+  width: 1rem;
+}
+
+.mobody .main .promotion .promotion-item-box .promotion-item .item-tit {
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  line-height: 0.32rem;
+  margin-top: 0;
+}
+
+.mobody .main .promotion .promotion-item-box .promotion-item .item-txt {
+  display: none;
+}
+
+.mobody .main .wending {
+  width: 100%;
+  height: 7.4rem;
+  margin: 0;
+  padding-top: 0;
+}
+
+.mobody .main .wending .wending-layer .wending-mid {
+  width: 100%;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .text-box-center {
+  width: 4.4rem;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .text-box {
+  display: none;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box {
+  display: block;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box:nth-of-type(8) {
+  top: 0.6rem;
+  left: 2.96rem;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box:nth-of-type(9) {
+  top: 1.76rem;
+  right: 0.74rem;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box:nth-of-type(10) {
+  top: 4.06rem;
+  right: 0.74rem;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box:nth-of-type(11) {
+  bottom: 0.6rem;
+  left: 2.96rem;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box:nth-of-type(12) {
+  top: 4.06rem;
+  left: 0.74rem;
+}
+
+.mobody .main .wending .wending-layer .wending-mid .mo-text-box:nth-of-type(13) {
+  top: 1.76rem;
+  left: 0.74rem;
+}
+
+.mobody .main .preponderance {
+  width: 100%;
+}
+
+.mobody .main .preponderance .prep-tit {
+  height: 1.24rem;
+  padding-top: 0.4rem;
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+}
+
+.mobody .main .preponderance .prep-item-box {
+  padding: 0 0.3rem;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.mobody .main .preponderance .prep-item-box .prep-item {
+  width: 3.36rem;
+  height: 3.6rem;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+  font-size: 0.32rem;
+  box-shadow: 0px 1px 10px 1px #ececed;
+}
+
+.mobody .main .preponderance .prep-item-box .prep-item img {
+  width: 80%;
+  height: 1.8rem;
+}
+
+.mobody .main .preponderance .prep-item-box .prep-item .prep-item-txt {
+  padding: 0;
+  width: 103%;
+}
+
+.mobody .main .preponderance .prep-item-box .prep-item .prep-item-txt .tit {
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+
+.mobody .main .preponderance .prep-item-box .prep-item .prep-item-txt .tit::after {
+  display: none;
+}
+
+.mobody .main .preponderance .prep-item-box .prep-item .prep-item-txt .wz {
+  display: none;
+}
+
+.mobody .main .preponderance .prep-item-box .prep-item .prep-item-txt .wz.mo {
+  display: block;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #777777;
+  line-height: 0.32rem;
+}
+
+.mobody .main .case {
+  width: 100%;
+  height: 5rem;
+}
+
+.mobody .main .case .case-layer .case-tab {
+  width: 100%;
+  padding-top: 0;
+}
+
+.mobody .main .case .case-layer .case-tab .case-tit {
+  padding-top: 0.4rem;
+  font-size: 0.32rem;
+  height: 1.3rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+}
+
+.mobody .main .case .case-layer .case-tab .case-tab-box {
+  display: none;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box {
+  width: 100%;
+  display: block;
+  padding: 0 0.1rem;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container {
+  height: 3.7rem;
+  /*包裹自定义分页器的div的位置等CSS样式*/
+  /*自定义分页器的样式，这个你自己想要什么样子自己写*/
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .img-box {
+  width: 3.35rem;
+  height: 3.35rem;
+  float: left;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .wzjs {
+  float: right;
+  width: 3.94rem;
+  padding-top: 0.2rem;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .wzjs .item-tit {
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .wzjs .item-txt {
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  transform-origin: left;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #777777;
+  line-height: 0.32rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px dashed #666666;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .wzjs .ms-box {
+  padding-top: 0.08rem;
+  font-size: 0.24rem;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .wzjs .ms-box span {
+  float: left;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .wzjs .ms-box .ms {
+  display: inline-block;
+  font-size: 0.24rem;
+  transform: scale(0.75);
+  text-align: center;
+  margin-right: 0;
+  margin-top: -0.2rem;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-wrapper .wzjs .ms-box .ms img {
+  display: block;
+  margin: 0 auto;
+  width: 0.42rem;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-pagination-bullets {
+  bottom: 0 !important;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-pagination-bullet {
+  width: 0.12rem;
+  height: 0.12rem;
+  opacity: .3;
+  background-color: #000000;
+  margin: 0 0.06rem;
+}
+
+.mobody .main .case .case-layer .case-tab .case-swiper-box .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #377DC9;
+  opacity: 1;
+}
+
+.mobody .advisory {
+  background: url(../images/commerce/bg_zixun_dianshang.png) no-repeat;
+  background-size: cover;
+}
+
+.mobody .advisory .advisory-layer {
+  width: 100%;
+  height: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 0.4rem;
+}
+
+.mobody .advisory .advisory-layer p {
+  text-align: center;
+  width: 100%;
+  font-size: 0.32rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+}
+
+.mobody .advisory .advisory-layer button {
+  width: 1.76rem;
+  height: 0.64rem;
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  margin: 0;
+}

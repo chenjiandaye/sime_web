@@ -47,6 +47,9 @@
             font-size: 18px;
             line-height: 32px;
             letter-spacing: 1px;
+            &.mo{
+                display: none;
+            }
         }
     }
 
@@ -162,6 +165,9 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 35px;
+                &.mo{
+                    display: none;
+                }
 
                 .flow-sys-item {
                     width: 200px;
@@ -274,6 +280,7 @@
                 }
 
                 .module-tit {
+                    position: relative;
                     text-align: center;
                     font-size: 16px;
                     letter-spacing: 1px;
@@ -284,6 +291,9 @@
                     font-size: 13px;
                     color: #888888;
                     line-height: 24px;
+                    &.mo{
+                        display: none;
+                    }
                 }
             }
         }

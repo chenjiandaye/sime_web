@@ -51,6 +51,10 @@
   letter-spacing: 1px;
 }
 
+.banner .banner-p p.mo {
+  display: none;
+}
+
 .banner .banner-icon {
   width: 426px;
   height: 75px;
@@ -161,6 +165,10 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 35px;
+}
+
+.main .b2c-flow .flow-layer .b2c-flow-sys-items.mo {
+  display: none;
 }
 
 .main .b2c-flow .flow-layer .b2c-flow-sys-items .flow-sys-item {
@@ -274,6 +282,7 @@
 }
 
 .main .management .management-module .module-item .module-tit {
+  position: relative;
   text-align: center;
   font-size: 16px;
   letter-spacing: 1px;
@@ -284,6 +293,10 @@
   font-size: 13px;
   color: #888888;
   line-height: 24px;
+}
+
+.main .management .management-module .module-item .module-int.mo {
+  display: none;
 }
 
 .advisory {

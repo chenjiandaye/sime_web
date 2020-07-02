@@ -1,0 +1,374 @@
+.mobody {
+    .banner {
+        width: 100%;
+        height: 4rem;
+        padding-top: 0.6rem;
+        text-align: center;
+
+        .banner-tit {
+            font-size: 0.4rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            margin-bottom: 0.1rem;
+        }
+
+        .banner-p {
+            margin-bottom: 0.6rem;
+        }
+
+        p {
+            display: none;
+
+            &.mo {
+                display: block;
+                max-width: 6.5rem;
+                margin: 0 auto;
+                font-size: 0.24rem;
+                transform: scale(0.91);
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 1);
+                line-height: 0.32rem;
+            }
+        }
+
+        .banner-icon {
+            width: 4.96rem;
+            height: 0.92rem;
+            margin: 0 auto;
+            background-size: contain;
+        }
+
+        .banner-btn {
+            display: none;
+        }
+    }
+
+    .main {
+        .b2c-shop {
+            width: 100%;
+
+            .b2c-shop-tit {
+                height: 0.94rem;
+                padding-top: 0.4rem;
+                font-size: 0.32rem;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+            }
+
+            .b2c-shop-int {
+                background-color: #ffffff;
+                margin-bottom: 0;
+                padding: 0.4rem 0.2rem 0.6rem;
+                font-size: 0.24rem;
+
+                img {
+                    width: 0.6rem;
+                }
+
+                p {
+                    font-size: 0.24rem;
+                    transform: scale(0.91);
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(85, 85, 85, 1);
+                    line-height: 0.32rem;
+                }
+            }
+        }
+
+        .b2c-flow {
+            .flow-layer {
+                width: 100%;
+
+                .b2c-flow-tit {
+                    height: 1.2rem;
+                    padding-top: 0.4rem;
+                    font-size: 0.32rem;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                }
+
+                .b2c-flow-img {
+                    padding: 0 0.2rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .b2c-flow-sys {
+                    font-size: 0.28rem;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(102, 102, 102, 1);
+                }
+
+                .b2c-flow-sys-items {
+                    display: none;
+                    margin-bottom: 0.5rem;
+
+                    &.mo {
+                        display: block;
+                        background-color: #ffffff;
+                        margin-top: 0.48rem;
+                        padding: 0.4rem 0.22rem 0;
+                        overflow: hidden;
+                        font-size: 0.24rem;
+
+                        .flow-sys-item {
+                            height: 3.2rem;
+                            width: 2.16rem;
+                            background-size: contain;
+                            padding: 0.9rem 0 0;
+                            float: left;
+                            margin-bottom: 0;
+
+                            &:nth-of-type(6) {
+                                background: url(../images/b2c/mk_b2c_shangpinzhanshi7.png) no-repeat;
+                                background-size: contain;
+                            }
+
+                            &:nth-of-type(8) {
+                                background: url(../images/b2c/mk_b2c_shangpinzhanshi8.png) no-repeat;
+                                background-size: contain;
+                            }
+
+                            &:nth-of-type(10) {
+                                background: url(../images/b2c/mk_b2c_shangpinzhanshi4.png) no-repeat;
+                                background-size: contain;
+                            }
+
+                            &:nth-of-type(11) {
+                                background: url(../images/b2c/mk_b2c_shangpinzhanshi6.png) no-repeat;
+                                background-size: contain;
+                            }
+
+                            &:nth-of-type(13) {
+                                background: url(../images/b2c/mk_b2c_pingjia.png) no-repeat;
+                                background-size: contain;
+                            }
+
+                            &:nth-of-type(15) {
+                                background: url(../images/b2c/mk_b2c_shangpinzhanshi5.png) no-repeat;
+                                background-size: contain;
+                            }
+
+                            .item-tit {
+                                font-size: 0.24rem;
+                                font-family: PingFangSC-Regular, PingFang SC;
+                                font-weight: 400;
+                            }
+
+                            .item-txt {
+                                font-size: 0.24rem;
+                                transform: scale(0.83);
+                                font-family: PingFangSC-Regular, PingFang SC;
+                                font-weight: 400;
+                                line-height: 0.26rem;
+                                position: relative;
+                                top: -0.2rem;
+                                text-align: center;
+                            }
+                        }
+
+                        .flow-sys-arrow {
+                            width: 0.16rem;
+                            height: 0.16rem;
+                            float: left;
+                            margin: 1.55rem 0.06rem 0;
+
+                            &.bot1 {
+                                position: absolute;
+                                right: 1.2rem;
+                                top: 1.8rem;
+                            }
+
+                            &.bot2 {
+                                position: absolute;
+                                left: 1.15rem;
+                                top: 5rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .management {
+            width: 100%;
+            background-color: #F8F8F8;
+            padding-bottom: 0.3rem;
+
+            .management-tit {
+                padding-top: 0.4rem;
+                height: 1.2rem;
+                font-size: 0.32rem;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+            }
+
+            .management-module {
+                padding: 0 0.3rem;
+                margin-bottom: 0;
+
+                .module-item {
+                    width: 3.36rem;
+                    height: 1.8rem;
+                    box-shadow: 0px 1px 10px 0px rgba(236, 236, 237, 1);
+                    border-radius: 5px;
+                    padding: 0.2rem 0.2rem 0;
+                    margin-bottom: 0.2rem;
+
+                    &:nth-of-type(1){
+                        background: url(../images/b2c/icon_b2c_mokuai1.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(2){
+                        background: url(../images/b2c/icon_b2c_mokuai2.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(3){
+                        background: url(../images/b2c/icon_b2c_mokuai3.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(4){
+                        background: url(../images/b2c/icon_b2c_mokuai4.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(5){
+                        background: url(../images/b2c/icon_b2c_mokuai5.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(6){
+                        background: url(../images/b2c/icon_b2c_mokuai6.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(7){
+                        background: url(../images/b2c/icon_b2c_mokuai7.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(8){
+                        background: url(../images/b2c/icon_b2c_mokuai8.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(9){
+                        background: url(../images/b2c/icon_b2c_mokuai9.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(10){
+                        background: url(../images/b2c/icon_b2c_mokuai10.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(11){
+                        background: url(../images/b2c/icon_b2c_mokuai11.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(12){
+                        background: url(../images/b2c/icon_b2c_mokuai12.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(13){
+                        background: url(../images/b2c/icon_b2c_mokuai13.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(14){
+                        background: url(../images/b2c/icon_b2c_mokuai14.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(15){
+                        background: url(../images/b2c/icon_b2c_mokuai15.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+                    &:nth-of-type(16){
+                        background: url(../images/b2c/icon_b2c_mokuai16.png) no-repeat;
+                        background-size: 1rem 1rem;
+                        background-position: right top;
+                    }
+
+                    img {
+                        display: none;
+                    }
+
+                    .module-tit {
+                        text-align: left;
+                        font-size: 0.28rem;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        margin: 0 0 0.03rem;
+                        &::after{
+                            content: '';
+                            display: block;
+                            width: 0.24rem;
+                            height: 0.04rem;
+                            background-color: #FD8E59;
+                            position: absolute;
+                            left: 0;
+                            bottom: -0.06rem;
+                        }
+                    }
+
+                    .module-int {
+                        display: none;
+                        &.mo {
+                            display: block;
+                            font-size: 0.24rem;
+                            transform: scale(0.83);
+                            transform-origin: left;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            font-weight: 400;
+                            color: rgba(119, 119, 119, 1);
+                            line-height: 0.28rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .advisory {
+        background: url(../images/b2c/bg_zixun_b2c.png) no-repeat;
+        background-size: cover;
+        .advisory-layer {
+            width: 100%;
+            height: 2rem;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding-top: 0.4rem;
+
+            p {
+                text-align: center;
+                width: 100%;
+                font-size: 0.32rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                letter-spacing: 0.04rem;
+            }
+
+            button {
+                width: 1.76rem;
+                height: 0.64rem;
+                font-size: 0.28rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+    }
+}
