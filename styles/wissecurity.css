@@ -157,6 +157,10 @@
   margin: 0 auto;
 }
 
+.main .trait .trait-layer .tradit-tit {
+  display: none;
+}
+
 .main .trait .trait-layer .center-cir {
   position: absolute;
   left: 50%;
@@ -272,6 +276,10 @@
   background-position: center top;
 }
 
+.main .solve .solve-scheme.mo {
+  display: none;
+}
+
 .main .solve .solve-scheme .solve-scheme-item {
   position: absolute;
   width: 260px;
@@ -333,6 +341,10 @@
   margin-top: 30px;
 }
 
+.main .solve .solve-zj.mo {
+  display: none;
+}
+
 .main .solve .solve-zj em {
   font-style: normal;
   color: #F84335;
@@ -377,6 +389,10 @@
   background: url(../images/wissecurity/dajiantou.png) no-repeat;
   background-size: 906px 573px;
   background-position: 240px bottom;
+}
+
+.main .alter .alter-layer .alter-ladder.mo {
+  display: none;
 }
 
 .main .alter .alter-layer .alter-ladder .alter-ladder-item {
@@ -673,6 +689,10 @@
 .main .synthesize .synthesize-layer .synthesize-img-box .bubble-box .bubble-item:nth-of-type(8) {
   right: 258px;
   top: -25px;
+}
+
+.main .synthesize .synthesize-layer .mo-synthesize-img-box {
+  display: none;
 }
 
 .advisory {

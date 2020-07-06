@@ -393,6 +393,9 @@
                 margin-top: 50px;
                 img{
                     width: 1106px;
+                    &.mo{
+                        display: none;
+                    }
                 }
             }
         }

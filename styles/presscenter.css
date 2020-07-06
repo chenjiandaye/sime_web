@@ -63,6 +63,10 @@
   color: #377DC9;
 }
 
+.main .mo-news-nav {
+  display: none;
+}
+
 .main .news-items .news-item {
   display: flex;
   border-bottom: 1px solid #dddddd;

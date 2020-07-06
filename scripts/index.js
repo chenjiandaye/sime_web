@@ -50,6 +50,26 @@ $(function () {
     } else { //电脑
         $('body').removeClass('mo')
         removejscssfile('./styles/m_index.min.css', 'css')
+        function docWidthChange() {
+            var docEl = document.documentElement
+            var width = docEl.clientWidth
+            if (width <= 1180) {
+                $('.swiper-info').css('padding-top', '0')
+                return
+            }
+            //1920-1180=740   
+            if (width > 1180 && width < 1920) {
+                var w = 1920 - width
+                var mar_t = 110 * ((740 - w) / 740) + 'px'
+                $('.swiper-info').css('padding-top', mar_t)
+                return
+            }
+            $('.swiper-info').css('padding-top', '110px')
+        }
+        $(window).resize(function () {
+            docWidthChange()
+        })
+        docWidthChange()
     }
 
     
@@ -103,26 +123,7 @@ $(function () {
         $('.pop-up').hide()
     })
 
-    function docWidthChange() {
-        var docEl = document.documentElement
-        var width = docEl.clientWidth
-        if (width <= 1180) {
-            $('.swiper-info').css('padding-top', '0')
-            return
-        }
-        //1920-1180=740   
-        if (width > 1180 && width < 1920) {
-            var w = 1920 - width
-            var mar_t = 110 * ((740 - w) / 740) + 'px'
-            $('.swiper-info').css('padding-top', mar_t)
-            return
-        }
-        $('.swiper-info').css('padding-top', '110px')
-    }
-    $(window).resize(function () {
-        docWidthChange()
-    })
-    docWidthChange()
+    
 
     var btnTop = $('.btnTop')
 

@@ -157,6 +157,9 @@
             width: 1180px;
             height: 100%;
             margin: 0 auto;
+            .tradit-tit {
+                display: none;
+            }
 
             .center-cir {
                 position: absolute;
@@ -272,6 +275,9 @@
             background: url(../images/wissecurity/fangantu.png) no-repeat;
             background-size: 620px 440px;
             background-position: center top;
+            &.mo{
+                display: none;
+            }
 
             .solve-scheme-item {
                 position: absolute;
@@ -333,6 +339,9 @@
             letter-spacing: 1px;
             text-align: center;
             margin-top: 30px;
+            &.mo{
+                display: none;
+            }
 
             em {
                 font-style: normal;
@@ -378,6 +387,9 @@
                 background: url(../images/wissecurity/dajiantou.png) no-repeat;
                 background-size: 906px 573px;
                 background-position: 240px bottom;
+                &.mo{
+                    display: none;
+                }
 
                 .alter-ladder-item {
                     position: absolute;
@@ -673,6 +685,10 @@
                         }
                     }
                 }
+            }
+
+            .mo-synthesize-img-box {
+                display: none;
             }
         }
     }

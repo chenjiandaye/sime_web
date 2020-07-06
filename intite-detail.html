@@ -8,14 +8,15 @@
 
     <link rel="stylesheet" type="text/css" href="{ms:global.host/}/{ms:global.style/}/sime/styles/pagination.css" />
     <link rel="stylesheet" type="text/css" href="{ms:global.host/}/{ms:global.style/}/sime/styles/aboutus.min.css" />
+    <script src="{ms:global.host/}/{ms:global.style/}/sime/scripts/m_abouts.js"></script>
     <title>诚聘英才_南京思美软件系统有限公司</title>
 </head>
 
 <body>
     <#include "head.html" />
 
-    <div class="banner">因思而变&nbsp;&nbsp;追求完美</div>
-    <div class="mian">
+    <div class="banner">因<em>思</em>而变&nbsp;&nbsp;追求完<em>美</em></div>
+    <div class="main">
         <nav>
             <div class="nav-name">关于我们</div>
             <ul class="list-box">
@@ -40,32 +41,117 @@
             <div class="invite-box">
                 <div class="content-tit">
                     <span>诚聘英才</span>
-                    <span class="tit-r">&lt; 返回列表</span>
+                    <span class="tit-r" onclick="window.history.go(-1)">&lt; 返回列表</span>
                 </div>
                 <div class="content cpyc-detail">
                     <div class="contnet-top">
-                        <div class="top-name"></div>
+                        <div class="top-name">{ms:field.title/}</div>
                         <div class="top-info">
-                            <div class="add">工作地点：</div>
-                            <div class="pay">薪资待遇：</div>
-                            <div class="num">招聘人数：</div>
+                            <div class="add">工作地点：{ms:field.author/}</div>
+                            <div class="pay">薪资待遇：{ms:field.keyword/}</div>
+                            <div class="num">招聘人数：{ms:field.source/}</div>
                         </div>
                     </div>
                     <div class="detail">
                         {ms:field.content/}
                     </div>
-                    <div class="sq-btn">申请职位</div>
                 </div>
+                <div class="back" onclick="window.history.go(-1)">返回</div>
             </div>
         </div>
-
     </div>
     <#include "footer.html" />
     <script>
         $('.t_list').eq(4).addClass('active')
-        $('.phone-btn').on('click', function () {
-            $('.pc-new.pc-title-btn').click()
-        })
+        if ((navigator.userAgent.match(
+                /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+            ))) { //手机
+            removejscssfile('/templets/1/default/sime/styles/aos.css', 'css')
+            removejscssfile('/templets/1/default/sime/scripts/aos.js', 'js')
+            $('.advisory-layer button,.b-btn2,.phone-btn').on('click', function () {
+                $('#mobile_icon_div>div').click()
+            })
+            var t = 0;
+            $('.mobody .tjxq').on('click', function () {
+                t = $(window).scrollTop();
+                $('body').css("top", -t + "px");
+                $('body').addClass('fiexd');
+                $('.pop-up.mo #smdsm').prop('checked', true)
+                $('.pop-up.mo').show()
+            })
+            $(".pop-up.mo .closeBtb").on('click', function () {
+                $('body').removeClass('fiexd');
+                $(window).scrollTop(t);
+                $('.pop-up.mo .rel').children('input').prop('checked', false)
+                $('.pop-up.mo .pop-line input[type="text"]').val('')
+                $('.pop-up.mo .pop-line textarea').val('')
+                $('.pop-up.mo .pop-line input').removeClass('red')
+                $('.pop-up.mo .pop-line textarea').removeClass('red')
+                $('.pop-up.mo').hide()
+            })
+
+            $('.pop-up.mo .pop-btn').on('click', function () {
+                var type = $(".pop-up.mo .rel input[type='radio']:checked").val()
+                var company_name = $('.pop-up.mo .company_name').val()
+                var industry = $('.pop-up.mo .industry').val()
+                var linkman = $('.pop-up.mo .linkman').val()
+                var cell_phone = $('.pop-up.mo .cell_phone').val()
+                var need = $('.pop-up.mo .need').val()
+                var flag = 0
+                if (company_name == '') {
+                    $('.pop-up.mo .company_name').addClass('red')
+                    flag++
+                }
+                if (industry == '') {
+                    $('.pop-up.mo .industry').addClass('red')
+                }
+                if (linkman == '') {
+                    $('.pop-up.mo .linkman').addClass('red')
+                    flag++
+                }
+                if (cell_phone == '') {
+                    $('.pop-up.mo .cell_phone').addClass('red')
+                    flag++
+                }
+                if (need == '') {
+                    $('.pop-up.mo .need').addClass('red')
+                    flag++
+                }
+                if (flag) {
+                    $(".dialog-ts.mo").show()
+                    return
+                }
+                var data = {}
+                data['name'] = '[公司名称]' + company_name + ' ' + '[联系人]' + linkman + ' ' + '[手机号]' + cell_phone
+                data['phone'] = '[产品类型]' + type + ' ' + '[所属行业]' + industry
+                data['words'] = '[需求描述]' + need
+
+                $.ajax({
+                    type: "POST",
+                    url: "{ms:global.host/}/mdiy/post/7df6529f9eaa26da7ae4e01c7f73aa06.do",
+                    data,
+                    success: function (msg) {
+                        console.log(msg)
+                        if (msg.result) {
+                            $(".dialog.mo").show()
+                            sendEmail(data)
+                        }
+                    }
+                })
+            })
+            $(".dialog-ts.mo").on("click", "button", function () {
+                $(".dialog-ts.mo").hide()
+            })
+
+            $(".dialog.mo").on("click", "button", function () {
+                $(".dialog.mo").hide()
+                $(".pop-up.mo .closeBtb").click()
+            })
+        } else { //电脑
+            $('.phone-btn').on('click', function () {
+                $('.pc-new.pc-title-btn').click()
+            })
+        }
     </script>
 </body>
 

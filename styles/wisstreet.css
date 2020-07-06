@@ -392,6 +392,10 @@
   width: 1106px;
 }
 
+.main .things .things-layer .things-img img.mo {
+  display: none;
+}
+
 .advisory {
   background-color: #37A3E6;
 }

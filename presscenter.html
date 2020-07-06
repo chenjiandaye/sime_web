@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/pagination.css">
     <link rel="stylesheet" href="./styles/presscenter.min.css">
+    <script src="./scripts/jQuery.js"></script>
+    <script src="./scripts/m_news.js"></script>
     <title>新闻中心</title>
 </head>
 <body>
@@ -68,6 +70,10 @@
             <a href="javascript:;">新闻中心</a>
             &gt;
             <a href="javascript:;" class="on">公司动态</a>
+        </div>
+        <div class="mo-news-nav">
+            <a href="javascript:;" class="gsdt">公司动态</a>
+            <a href="javascript:;" class="hysw">行业新闻</a>
         </div>
         <div class="news-items">
             <div class="news-item">
@@ -190,5 +196,8 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="./scripts/jquery.pagination.js"></script>
     <script src="./scripts/presscenter.js"></script>
+    <script>
+        $(".gsdt").addClass('on').siblings().removeClass("on")
+    </script>
 </body>
 </html>

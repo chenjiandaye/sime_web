@@ -1,0 +1,111 @@
+.mobody .banner {
+  width: 100%;
+  height: 2.6rem;
+  padding-top: 0.6rem;
+  text-align: left;
+  background-size: 100% 100%;
+}
+
+.mobody .banner .banner-layer {
+  width: 100%;
+  padding-left: 0.6rem;
+}
+
+.mobody .banner .banner-tit {
+  font-size: 0.48rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.06rem;
+  margin-top: 0;
+  letter-spacing: normal;
+}
+
+.mobody .banner .banner-tit::after {
+  width: 0.48rem;
+  height: 0.08rem;
+  bottom: -0.12rem;
+}
+
+.mobody .banner .banner-tit-en {
+  margin-top: 0.2rem;
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+}
+
+.mobody .main {
+  width: 100%;
+}
+
+.mobody .main .news-nav {
+  display: none;
+}
+
+.mobody .main .mo-news-nav {
+  display: block;
+  height: 0.8rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ECECED;
+}
+
+.mobody .main .mo-news-nav a {
+  line-height: 0.8rem;
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #777777;
+  margin: 0 1rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobody .main .mo-news-nav a.on {
+  color: #333333;
+  border-bottom: 3px solid #377DC9;
+}
+
+.mobody .main .news-items .news-item {
+  padding: 0.3rem;
+}
+
+.mobody .main .news-items .news-item .item-img {
+  width: 2.52rem;
+  padding-right: 0.3rem;
+}
+
+.mobody .main .news-items .news-item .item-img img {
+  max-width: 2.52rem;
+  height: 1.48rem;
+}
+
+.mobody .main .news-items .news-item .item-info {
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+
+.mobody .main .news-items .news-item .item-info .name {
+  font-size: 0.26rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mobody .main .news-items .news-item .item-info .time {
+  margin-top: 0;
+  font-size: 0.24rem;
+  transform: scale(0.83);
+  transform-origin: left;
+  font-weight: 400;
+  color: #999999;
+  line-height: normal;
+}
+
+.mobody .main .news-items .news-item .item-info .text {
+  margin-top: 0;
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  transform-origin: left;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.32rem;
+  -webkit-line-clamp: 2;
+}

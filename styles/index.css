@@ -582,6 +582,10 @@
   max-width: 360px;
 }
 
+.main .advantage .adv-item-box .adv-item p.mo-p {
+  display: none;
+}
+
 .main .advantage .adv-item-box .adv-item img {
   position: absolute;
   right: 50px;

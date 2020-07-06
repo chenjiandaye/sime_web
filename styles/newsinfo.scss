@@ -1,37 +1,45 @@
-@media screen and(min-width: 0)  {
-    .banner {
-        height: 250px;
-        padding-top: 0px;
-    }
-}
-
-@media screen and(min-width: 1180px)  {
-    .banner {
-        height: 300px;
-        padding-top: 52px;
-    }
-}
-
-@media screen and(min-width: 1280px)  {
-    .banner {
-        height: 350px;
-        padding-top: 75px;
-    }
-}
-
-@media screen and (min-width: 1365px)  {
-    .banner {
-        height: 400px;
-        padding-top: 120px;
-    }
-}
 .banner {
     max-width: 1920px;
+    height: 300px;
     margin: 0 auto;
-    background: url(../images/common/banner_anli.png) no-repeat;
-    background-size: cover;
-    text-align: center;
+    background: url(../images/common/news_banner.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center bottom;
     color: #ffffff;
+
+    .banner-layer {
+        width: 1180px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .banner-tit {
+            position: relative;
+            margin-top: 82px;
+            font-size: 50px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            letter-spacing: 5px;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 48px;
+                height: 5px;
+                background-color: #ffffff;
+                position: absolute;
+                left: 0;
+                bottom: -15px;
+            }
+        }
+
+        .banner-tit-en {
+            margin-top: 25px;
+            font-size: 30px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+    }
 }
 
 .main {
@@ -52,6 +60,10 @@
                 color: #377DC9;
             }
         }
+    }
+
+    .mo-news-nav {
+        display: none;
     }
 
     .news-container {
@@ -75,7 +87,8 @@
             text-align: center;
             min-width: 580px;
             margin: 0 auto;
-            img{
+
+            img {
                 min-width: 580px;
             }
         }
@@ -85,6 +98,7 @@
             margin: 0 auto;
             margin-top: 30px;
             margin-bottom: 65px;
+
             p {
                 font-size: 15px;
                 color: #444444;

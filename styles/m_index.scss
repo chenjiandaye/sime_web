@@ -7,7 +7,45 @@
             .swiper-wrapper {
                 a {
                     .swiper-info {
-                        display: none;
+                        &.white{
+                            .info-c {
+                                p{
+                                    color: #ffffff;
+                                }
+                            }
+                            .info-tit {
+                                color: #ffffff;
+                            }
+                        }
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        width: 100%;
+                        padding-left: 0.5rem;
+                        padding-top: 0.6rem;
+
+                        .info-banner,
+                        .info-btnbox {
+                            display: none;
+                        }
+
+                        .info-c {
+                            margin-top: 0.05rem;
+                            width: 2.54rem;
+                            line-height: 0.32rem;
+                            p {
+                                font-size: 0.24rem;
+                                transform: scale(0.91);
+                                transform-origin: left;
+                                font-weight: 400;
+                                color: rgba(85, 85, 85, 1);
+                                line-height: 0.32rem;
+                            }
+                        }
+
+                        .info-tit {
+                            font-size: 0.4rem;
+                            font-weight: 400;
+                            color: rgba(51, 51, 51, 1);
+                        }
                     }
 
                     img {
@@ -62,6 +100,7 @@
 
                 .top-item {
                     width: 25%;
+
                     a {
                         display: block;
                         text-align: center;
@@ -432,6 +471,10 @@
                         font-size: 0.24rem;
                         transform: scale(0.91);
                         line-height: 0.32rem;
+
+                        &.mo-p {
+                            display: block;
+                        }
 
                         &.pc-p {
                             display: none;

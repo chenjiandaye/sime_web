@@ -100,6 +100,10 @@
   width: 100%;
 }
 
+.mobody .main .trait .trait-white-layer .trait-layer .tradit-tit {
+  display: block;
+}
+
 .mobody .main .trait .trait-white-layer .trait-layer .center-cir {
   display: none;
 }
@@ -124,4 +128,317 @@
   width: 2.3rem;
   height: 2.9rem;
   margin: 0 0.06rem 0.2rem;
+  padding: 0.2rem 0.1rem;
+}
+
+.mobody .main .trait .trait-white-layer .trait-layer .tradit-items .tradit-item .item-tit {
+  font-size: 0.28rem;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.mobody .main .trait .trait-white-layer .trait-layer .tradit-items .tradit-item p {
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  line-height: 0.3rem;
+}
+
+.mobody .main .solve {
+  width: 100%;
+  height: auto;
+  padding-top: 0.4rem;
+}
+
+.mobody .main .solve .solve-tit {
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+  padding: 0 1.1rem;
+}
+
+.mobody .main .solve .solve-scheme {
+  display: none;
+}
+
+.mobody .main .solve .solve-scheme.mo {
+  display: block;
+  margin-top: 0;
+  background: none;
+  height: auto;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0.3rem;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item {
+  position: static;
+  width: 3.3rem;
+  height: 3.7rem;
+  box-shadow: 0px 1px 10px 0px #ececed;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item:nth-of-type(1) {
+  background: url(../images/wissecurity/icon_anbao_taizhang1.png) no-repeat;
+  background-size: 1rem 1rem;
+  background-position: center top;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item:nth-of-type(2) {
+  background: url(../images/wissecurity/icon_anbao_taizhang2.png) no-repeat;
+  background-size: 1rem 1rem;
+  background-position: center top;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item:nth-of-type(3) {
+  background: url(../images/wissecurity/icon_anbao_taizhang3.png) no-repeat;
+  background-size: 1rem 1rem;
+  background-position: center top;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item:nth-of-type(4) {
+  background: url(../images/wissecurity/icon_anbao_taizhang4.png) no-repeat;
+  background-size: 1rem 1rem;
+  background-position: center top;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item:nth-of-type(5) {
+  background: url(../images/wissecurity/icon_anbao_taizhang5.png) no-repeat;
+  background-size: 1rem 1rem;
+  background-position: center top;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item:nth-of-type(6) {
+  background: url(../images/wissecurity/icon_anbao_taizhang6.png) no-repeat;
+  background-size: 1rem 1rem;
+  background-position: center top;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item .txt {
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #444444;
+  line-height: 0.32rem;
+}
+
+.mobody .main .solve .solve-scheme.mo .scheme-flex-box .solve-scheme-item .tit {
+  font-size: 0.28rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  margin: 1.1rem 0 0.1rem;
+}
+
+.mobody .main .solve .solve-arrow {
+  margin-top: 0.1rem;
+  font-size: 0;
+}
+
+.mobody .main .solve .solve-arrow img {
+  width: 0.36rem;
+}
+
+.mobody .main .solve .solve-zj {
+  display: none;
+}
+
+.mobody .main .solve .solve-zj.mo {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  line-height: 0.36rem;
+  margin-bottom: 0.6rem;
+}
+
+.mobody .main .alter {
+  max-width: none;
+  width: 100%;
+  height: 7.2rem;
+  background-size: 100% 100%;
+}
+
+.mobody .main .alter .trait-white-layer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.mobody .main .alter .alter-layer {
+  width: 100%;
+  padding-top: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-image: url(../images/wissecurity/icon_anbao_dajiantou.png);
+  background-repeat: no-repeat;
+  background-size: 1.2rem 5.1rem;
+  background-position: 5.9rem 1.48rem;
+}
+
+.mobody .main .alter .alter-layer .alter-tit {
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  padding: 0 1.1rem;
+}
+
+.mobody .main .alter .alter-layer .alter-ladder {
+  display: none;
+  background: none;
+  height: 5.92rem;
+  padding-top: 1.2rem;
+}
+
+.mobody .main .alter .alter-layer .alter-ladder.mo {
+  display: block;
+}
+
+.mobody .main .alter .alter-layer .alter-ladder.mo .alter-ladder-item {
+  position: static;
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  padding-left: 0.4rem;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.mobody .main .alter .alter-layer .alter-ladder.mo .alter-ladder-item::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 0.12rem solid transparent;
+  border-left: 0.20rem solid red;
+  border-bottom: 0.12rem solid transparent;
+  margin-right: 0.08rem;
+}
+
+.mobody .main .alter .alter-layer .alter-ladder.mo .alter-ladder-item .num {
+  display: none;
+}
+
+.mobody .main .capacity .capacity-layer {
+  width: 100%;
+}
+
+.mobody .main .capacity .capacity-layer .capacity-tit {
+  padding-top: 0.4rem;
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  background-size: 0.94rem 0.7rem;
+  background-position: 2.18rem 0.16rem;
+}
+
+.mobody .main .capacity .capacity-layer .capacity-module {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+  margin-bottom: 0.36rem;
+}
+
+.mobody .main .capacity .capacity-layer .capacity-module .module-item {
+  margin: 0;
+  width: 1.7rem;
+  height: 3.3rem;
+  box-shadow: 0px 1px 10px 0px #ececed;
+  border-radius: 5px;
+  font-size: 0;
+  margin-bottom: 0.4rem;
+}
+
+.mobody .main .capacity .capacity-layer .capacity-module .module-item img {
+  width: 1rem;
+}
+
+.mobody .main .capacity .capacity-layer .capacity-module .module-item .item-name {
+  font-size: 0.26rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+
+.mobody .main .capacity .capacity-layer .capacity-module .module-item .item-name::after {
+  width: 0.2rem;
+  height: 0.06rem;
+  bottom: -0.1rem;
+}
+
+.mobody .main .capacity .capacity-layer .capacity-module .module-item .item-text {
+  margin-top: 0.1rem;
+  padding: 0;
+  font-size: 0.24rem;
+  transform: scale(0.83);
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #888888;
+  line-height: 0.28rem;
+}
+
+.mobody .main .synthesize .synthesize-layer {
+  width: 100%;
+  height: 7rem;
+  padding-top: 0.4rem;
+}
+
+.mobody .main .synthesize .synthesize-layer .synthesize-tit {
+  font-size: 0.32rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+}
+
+.mobody .main .synthesize .synthesize-layer .synthesize-img-box {
+  display: none;
+}
+
+.mobody .main .synthesize .synthesize-layer .mo-synthesize-img-box {
+  display: block;
+  margin: 0 0.16rem;
+  height: 6.16rem;
+  background: url(../images/wissecurity/pic_anbao_zongheguanli.png) no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+.mobody .advisory {
+  background: url(../images/wissecurity/bg_zixun_anbao.png) no-repeat;
+  background-size: cover;
+}
+
+.mobody .advisory .advisory-layer {
+  width: 100%;
+  height: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 0.4rem;
+}
+
+.mobody .advisory .advisory-layer p {
+  text-align: center;
+  width: 100%;
+  font-size: 0.32rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+}
+
+.mobody .advisory .advisory-layer button {
+  width: 1.76rem;
+  height: 0.64rem;
+  font-size: 0.28rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  margin: 0;
 }

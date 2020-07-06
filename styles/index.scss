@@ -594,6 +594,9 @@
                 p {
                     font-size: 15px;
                     max-width: 360px;
+                    &.mo-p{
+                        display: none;
+                    }
                 }
 
                 img {

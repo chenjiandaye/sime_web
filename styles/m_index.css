@@ -7,7 +7,44 @@
 }
 
 .mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info {
+  font-family: PingFangSC-Regular, PingFang SC;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-top: 0.6rem;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info.white .info-c p {
+  color: #ffffff;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info.white .info-tit {
+  color: #ffffff;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-banner,
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-btnbox {
   display: none;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-c {
+  margin-top: 0.05rem;
+  width: 2.54rem;
+  line-height: 0.32rem;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-c p {
+  font-size: 0.24rem;
+  transform: scale(0.91);
+  transform-origin: left;
+  font-weight: 400;
+  color: #555555;
+  line-height: 0.32rem;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-tit {
+  font-size: 0.4rem;
+  font-weight: 400;
+  color: #333333;
 }
 
 .mobody .swper-box .swiper-container .swiper-wrapper a img {
@@ -421,6 +458,10 @@
   font-size: 0.24rem;
   transform: scale(0.91);
   line-height: 0.32rem;
+}
+
+.mobody .main .advantage .adv-item-box .adv-item p.mo-p {
+  display: block;
 }
 
 .mobody .main .advantage .adv-item-box .adv-item p.pc-p {
