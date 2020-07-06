@@ -107,6 +107,10 @@
   margin: 0 auto;
 }
 
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a img.mo {
+  display: none;
+}
+
 .swper-box .swiper-container .swiper-pagination-custom {
   bottom: 10px;
   left: 0;

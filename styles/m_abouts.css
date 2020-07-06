@@ -4,7 +4,8 @@
   height: 2.6rem;
   padding-top: 1rem;
   text-align: center;
-  background-size: 100% 100%;
+  background: url(../images/aboutus/banner_mo_about.jpg) no-repeat;
+  background-size: contain;
   font-size: 0.48rem;
   font-family: PingFangSC-Medium, PingFang SC;
   font-weight: 500;
@@ -83,6 +84,8 @@
 .mobody .main .main-content .framework-box .zzjg {
   padding: 0.4rem 0.34rem;
   margin: 0;
+  background: url(../images/aboutus/bg_jiagou.jpg) no-repeat;
+  background-size: 100% 100%;
 }
 
 .mobody .main .main-content .framework-box .zzjg img {
@@ -182,9 +185,9 @@
 }
 
 .mobody .main .main-content .invite-box .back {
-  width: 1.6rem;
-  height: 0.8rem;
-  line-height: 0.8rem;
+  width: 1.3rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
   margin: 0 auto;
   text-align: center;
   border-radius: 3px;

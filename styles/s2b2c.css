@@ -175,6 +175,10 @@
   overflow: hidden;
 }
 
+.main .advantage .adv-mo-tit {
+  display: none;
+}
+
 .main .advantage .circle-in {
   position: absolute;
   left: 50%;

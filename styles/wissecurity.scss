@@ -379,6 +379,9 @@
                 font-family: MicrosoftYaHei;
                 letter-spacing: 2px;
                 text-align: center;
+                &.mo{
+                    display: none;
+                }
             }
 
             .alter-ladder {

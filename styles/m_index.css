@@ -48,6 +48,11 @@
 }
 
 .mobody .swper-box .swiper-container .swiper-wrapper a img {
+  display: none;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a img.mo {
+  display: block;
   height: 100%;
 }
 
@@ -604,7 +609,8 @@
 
 .mobody .main .par-item-box {
   padding: 0 0.3rem;
-  margin-bottom: 0.18rem;
+  margin-bottom: 0.15rem;
+  margin-top: 0.03rem;
 }
 
 .mobody .main .par-item-box .par-item {
@@ -612,9 +618,11 @@
   height: 0.8rem;
   border: 1px solid #ddd;
   margin-bottom: 0.2rem;
+  font-size: 0;
+  background-color: #ffffff;
 }
 
 .mobody .main .par-item-box .par-item img {
-  position: relative;
-  top: -0.35rem;
+  max-height: 100%;
+  margin-top: 0.06rem;
 }

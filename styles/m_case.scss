@@ -4,7 +4,8 @@
         height: 4rem;
         padding-top: 0.9rem;
         text-align: left;
-        background-size: 100% 100%;
+        background: url(../images/common/banner_mo_chenggonganli.jpg) no-repeat;
+        background-size: contain;
 
         .banner-layer {
             width: 100%;
@@ -78,11 +79,13 @@
 
                 .hover-layer {
                     padding: 0.1rem 0 0;
+
                     div {
                         font-size: 0.24rem;
                         transform: scale(0.91);
                         font-family: MicrosoftYaHei;
                         line-height: 0.36rem;
+                        height: 120%;
                     }
 
                     &::before {
