@@ -73,6 +73,7 @@
 .mobody .main .news-items .news-item .item-img {
   width: 2.52rem;
   margin-right: 0.3rem;
+  padding: 0;
 }
 
 .mobody .main .news-items .news-item .item-img img {

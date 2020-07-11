@@ -105,6 +105,9 @@
   color: #444444;
   line-height: 24px;
   margin-bottom: 15px;
-  text-indent: 2em;
   display: grid;
+}
+
+.main .news-container .new-detail p img {
+  max-width: 100%;
 }
