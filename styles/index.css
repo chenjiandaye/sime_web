@@ -46,6 +46,10 @@
   line-height: 34px;
 }
 
+.swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-c.mo {
+  display: none;
+}
+
 .swper-box .swiper-container .swiper-wrapper .swiper-slide a .swiper-info .info-banner {
   width: 426px;
   height: 75px;

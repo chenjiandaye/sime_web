@@ -27,8 +27,7 @@
 }
 
 .mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-c {
-  margin-top: 0.05rem;
-  width: 2.54rem;
+  margin-top: 0.12rem;
   line-height: 0.32rem;
 }
 
@@ -39,6 +38,14 @@
   font-weight: 400;
   color: #555555;
   line-height: 0.32rem;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-c.pc {
+  display: none;
+}
+
+.mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-c.mo {
+  display: block;
 }
 
 .mobody .swper-box .swiper-container .swiper-wrapper a .swiper-info .info-tit {

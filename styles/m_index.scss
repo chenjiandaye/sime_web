@@ -28,8 +28,7 @@
                         }
 
                         .info-c {
-                            margin-top: 0.05rem;
-                            width: 2.54rem;
+                            margin-top: 0.12rem;
                             line-height: 0.32rem;
                             p {
                                 font-size: 0.24rem;
@@ -38,6 +37,12 @@
                                 font-weight: 400;
                                 color: rgba(85, 85, 85, 1);
                                 line-height: 0.32rem;
+                            }
+                            &.pc {
+                                display: none;
+                            }
+                            &.mo {
+                                display: block;
                             }
                         }
 
